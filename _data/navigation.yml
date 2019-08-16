@@ -1,0 +1,21 @@
+# Site navigation links
+
+- title: Home
+  url: /
+
+- title: About
+  url: /about/
+
+
+
+- title: JavaScript
+  url: /javascript/
+
+#- title: Node.js
+ # url: /node/
+
+
+
+
+- title: Search
+  url: /search/
