@@ -4,7 +4,7 @@ title: "String Reverse"
 comments: true
 share: true
 modified:
-categories: interview
+categories: javascript
 excerpt:
 tags: []
 image:
