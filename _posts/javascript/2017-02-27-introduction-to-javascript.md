@@ -4,7 +4,7 @@ title: "Introductiont"
 comments: true
 share: true
 modified:
-categories: javascript
+categories: interview
 excerpt:
 tags: []
 image:
