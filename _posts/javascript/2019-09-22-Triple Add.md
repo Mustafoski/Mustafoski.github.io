@@ -13,7 +13,7 @@ date: 2017-03-01T15:39:55-04:00
 modified: 2017-03-01T15:39:55-04:00
 ---
 
-##Triple Add
+#Triple Add
 
 tripleAdd(10)(20)(30);
 // returns the total of 3 numbers/ invokations
