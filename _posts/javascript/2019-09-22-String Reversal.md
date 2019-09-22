@@ -16,10 +16,10 @@ modified: 2019-09-22T15:39:55-04:00
 ## String Reversal
 
 
-Example:
-reverse('apple') = 'leppa'
-reverse('hello') = 'olleh'
-reverse('Greetings') = 'sgniteerG'
+Example:<br>
+reverse('apple') = 'leppa'<br>
+reverse('hello') = 'olleh'<br>
+reverse('Greetings') = 'sgniteerG'<br>
 
 ~~~
 function reverse(str){

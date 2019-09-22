@@ -29,5 +29,7 @@ findLongestWord(str) {
 
 console.log(findLongestWord('Emir Mustafoski')) // 10
 ~~~
+Mustafoski has 10 letters and Emir has only 4
+
 
 Hint: For full word you split with space inside.

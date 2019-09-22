@@ -15,11 +15,11 @@ modified: 2019-09-22T15:39:55-04:00
 
 ## How to solve problems
 
-In order to solve coding problems we need to learn at least these Data Structures:
-	1. Array						5. Trees
-	2. Stacks						6. Tries
-	3. Queues						7. Graphs
-	4. Linked List					10.Hash Table
+In order to solve coding problems we need to learn at least these Data Structures:<br>
+	1. Array<br>						5. Trees<br>
+	2. Stacks<br>						6. Tries<br>
+	3. Queues<br>						7. Graphs<br>
+	4. Linked List<br>					10.Hash Table<br>
 
 
 Also we need to learn these Algorithms:
@@ -31,20 +31,20 @@ Also we need to learn these Algorithms:
 
 There are a lot more Data Structures and a lot more Algorithms.
 
-##The 3 pillars of good code: 
-1.Readable 
-2.Time Complexity 
-3.Space Complexity
+The 3 pillars of good code: 
+	1.Readable 
+	2.Time Complexity 
+	3.Space Complexity
 
 ##For Example
-const array1 = ['a','b','c','x'];
-const array2 = ['z','y','i'];
-Should return false
+const array1 = ['a','b','c','x'];<br>
+const array2 = ['z','y','i'];<br>
+Should return false<br>
 
 
-const array1 = ['a','b','c','x'];
-const array2 = ['z','y','x'];
-Should return true
+const array1 = ['a','b','c','x'];<br>
+const array2 = ['z','y','x'];<br>
+Should return true<br>
 ##
 
 ~~~
