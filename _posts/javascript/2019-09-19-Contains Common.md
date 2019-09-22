@@ -40,6 +40,8 @@ There are a lot more Data Structures and a lot more Algorithms.
 const array1 = ['a','b','c','x'];
 const array2 = ['z','y','i'];
 Should return false
+
+
 const array1 = ['a','b','c','x'];
 const array2 = ['z','y','x'];
 Should return true
@@ -61,4 +63,5 @@ containsCommonItem(array1,array2);
 
 ~~~
 
-First for loop a checks with z, y, x, also b c and x from array1 checks first z, y, x,
+First for loop a checks with z, y, x
+Also b c and x from array1 checks first z, y, x,
