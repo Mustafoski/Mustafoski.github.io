@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How to solve problems"
+title: "Translator"
 comments: true
 share: true
 modified:
@@ -72,8 +72,7 @@ function translatePhrase(){
     var phrase = document.getElementById('fromPhrase').value;
     
     var url = "https://glosbe.com/gapi/translate?from=" + from + "&dest=" + to + "&format=json&phrase=" + phrase  + "&pretty=true";
-    console.log(url);
-    console.log(phrase);
+    
     
     fetch(url)
         .then(response => {
@@ -83,8 +82,9 @@ function translatePhrase(){
         }
         
         response.json().then(data => {
-            document.getElementById("toPhrase").value = data.tuc[0].phrase ? data.tuc[0].phrase.text : "" ;
-            console.log(phrase);
+            document.getElementById("toPhrase").value = data.tuc[0].phrase ? data.tuc[0].phrase.text 
+            : "" ;
+            
         });
         
     }).catch(err => {
@@ -93,4 +93,6 @@ function translatePhrase(){
 }
 
 ~~~
+We load all the languages in a array called langs in the HTML we have to inputs From a language To a language and we take them as IDs and in the text area we translate the inserted words. first we take the API, then we check if the API has response.status of 200 (success) if not return Errror.
 
+If response.status is 200 we use json() on the response and create callback where take the written sentence and translate it or if error last line will cought the errror with catch.
