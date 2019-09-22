@@ -1,8 +1,8 @@
 # Site wide configuration
 
-title: MEAN Stack
+title: Interview Problems
 locale: en_US
-description: Tutorials and best practices of the various frameworks that make the MEAN Stack
+description: Tutorials and best practices of the various Javascript Problems
 logo: site-logo.png
 search: true
 #url: http://localhost:4000
