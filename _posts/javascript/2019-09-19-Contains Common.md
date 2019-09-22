@@ -31,19 +31,19 @@ Also we need to learn these Algorithms:
 
 There are a lot more Data Structures and a lot more Algorithms.
 
-The 3 pillars of good code: 
+##The 3 pillars of good code: 
 1.Readable 
 2.Time Complexity 
 3.Space Complexity
 
-`For Example
+##For Example
 const array1 = ['a','b','c','x'];
 const array2 = ['z','y','i'];
 Should return false
 const array1 = ['a','b','c','x'];
 const array2 = ['z','y','x'];
 Should return true
-`
+##
 
 ~~~
 function containsCommonItem(arr1, arr2) {
