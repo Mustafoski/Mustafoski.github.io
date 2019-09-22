@@ -13,9 +13,10 @@ date: 2019-09-22T15:39:55-04:00
 modified: 2019-09-22T15:39:55-04:00
 ---
 
-#Triple Add
+Triple Add
 
 tripleAdd(10)(20)(30);
+<br>
 // returns the total of 3 numbers/ invokations
 
 
