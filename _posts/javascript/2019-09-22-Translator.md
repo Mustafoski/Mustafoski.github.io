@@ -14,7 +14,7 @@ modified: 2019-09-22T15:39:55-04:00
 ---
 
 Translator
-~~~
+##
 <!DOCTYPE html>
 <html>
 <head>
@@ -45,7 +45,7 @@ Translator
 <script src="app.js"></script>
 </body>
 </html>
-~~~
+
 ___
 ~~~
 function loadLanguages(){
