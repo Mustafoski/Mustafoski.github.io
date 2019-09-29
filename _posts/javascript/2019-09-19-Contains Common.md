@@ -63,5 +63,8 @@ containsCommonItem(array1,array2);
 
 ~~~
 
-First for loop a checks with z, y, x
-Also b c and x from array1 checks first z, y, x,
+1.First for loop a checks with a, b, c and x if <strong>a</strong> with the second loop with elements of array2 if it is true the return is TRUE else False
+<br>
+
+In simple term if elements of array1 are the same as elements of array2 then and only then is true.
+
