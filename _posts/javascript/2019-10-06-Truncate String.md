@@ -44,9 +44,9 @@ function truncateString(str, num) {
 		return str;
 	}
 }
-console.log(truncateString(str,num1)); // "0..."
-console.log(truncateString(str,num2)); // "0ra..."
-console.log(truncateString(str,num3)); // "0range"
+console.log(truncateString(string,num1)); // "0..."
+console.log(truncateString(string,num2)); // "0ra..."
+console.log(truncateString(string,num3)); // "0range"
 
 ~~~
 
