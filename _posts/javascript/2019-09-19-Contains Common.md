@@ -46,7 +46,10 @@ const array1 = ['a','b','c','x'];<br>
 const array2 = ['z','y','x'];<br>
 Should return true<br>
 ##
+<br>
+
 ___
+
 
 ~~~
 function containsCommonItem(arr1, arr2) {
