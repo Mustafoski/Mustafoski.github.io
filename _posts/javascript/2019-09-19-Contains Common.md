@@ -34,8 +34,8 @@ There are a lot more Data Structures and a lot more Algorithms.
 The 3 pillars of good code: <br>
 
 	1. Readable 
-	1. Time Complexity 
-	1. Space Complexity
+	2. Time Complexity 
+	3. Space Complexity
 
 
 > ##For Example
