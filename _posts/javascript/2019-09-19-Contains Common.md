@@ -32,6 +32,7 @@ Also we need to learn these Algorithms:
 There are a lot more Data Structures and a lot more Algorithms.
 
 The 3 pillars of good code: <br>
+
 	1.Readable 
 	1.Time Complexity 
 	1.Space Complexity
