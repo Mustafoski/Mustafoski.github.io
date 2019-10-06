@@ -13,7 +13,7 @@ date: 2019-10-06T15:39:55-04:00
 modified: 2019-10-06T15:39:55-04:00
 ---
 
-## How to solve problems
+## Palindrom
 
 A palindrome is a word, number, phrase, or other sequence of characters which reads the same backward as forward, such as ‘’taco cat’’ or madam or racecar or the number 10801
 
