@@ -9,11 +9,11 @@ excerpt:
 tags: []
 image:
   feature:
-date: 2019-12-29T15:39:55-04:00
-modified: 2019-12-29T15:39:55-04:00
+date: 2019-12-22T15:39:55-04:00
+modified: 2019-12-22T15:39:55-04:00
 ---
 
-## Add Border
+## Add Two Digitis
 
 Outside of the values we give border with the style of *
 
