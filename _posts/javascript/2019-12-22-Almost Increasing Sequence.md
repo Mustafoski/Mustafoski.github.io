@@ -14,6 +14,8 @@ modified: 2019-12-22T15:39:55-04:00
 ---
 
 ## Almost Increasing Sequence
+
+
 An almost increasing sequence can only have one number that is smaller than its previous number, and it must not equal than the number before its previous number. Also, the previous number must not equal to the number after the current number.
 
  
