@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Factorial"
+title: "Absolute Values Sum Minization"
 comments: true
 share: true
 modified:
@@ -13,16 +13,17 @@ date: 2019-09-29T15:39:55-04:00
 modified: 2019-09-29T15:39:55-04:00
 ---
 
-## Factorial Calculator
+## Absolute Values Sum Minization
 
-So basically, factorializing numbers makes it easier to figure out the number of combinations which is useful when calculating probabilities or statistics. … If the integer is represented with the letter n, a factorial is the product of all positive integers less than or equal to n. Example 5!, 10!, 25!
+Given a sorted array of integers a, find an integer x from a such that the value of 
+	abc(a[0] - x) + abs(a[1] - x) + ... + abc(a[a.length - 1] - x)
+is the smallest possible (here abc denotes the absolute value).If there are several possible answers output the smallest one.
 
 ___
 
 > ##For Example
-test 5! === return 12o <br>
-test 4! === return 24 <br>
-test 1! === return 1 <br>
+For a = [2,4,7] the output should be 4<br>
+For a = [2,4,7,6] the output shoud be 4<br>
 Should return true<br>
 ##
 <br>
