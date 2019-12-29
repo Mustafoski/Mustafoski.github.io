@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "String Reversal-v2"
+title: "String Reversal"
 comments: true
 share: true
 modified:
