@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Background Color Generator"
+title: "Reverse String"
 comments: true
 share: true
 modified:
@@ -34,6 +34,4 @@ function reverse(str) {
 ~~~
 ___
 
-First we will turn this str parameter into an array with split(''). And we setup the reduce helper functions.(()=> {
-	
-}, '')
+First we will turn this str parameter into an array with split(''). And we setup the reduce helper functions. Reduce takes two parameters one above and one at the end where we initialize '' empty string. Esetually second parameter will be starting initial value for the function
