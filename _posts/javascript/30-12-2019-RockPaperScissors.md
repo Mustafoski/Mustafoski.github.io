@@ -9,8 +9,8 @@ excerpt:
 tags: []
 image:
   feature:
-date: 2019-12-29T15:39:55-04:00
-modified: 2019-12-29T15:39:55-04:00
+date: 2019-12-30T15:39:55-04:00
+modified: 2019-12-30T15:39:55-04:00
 ---
 
 ## Rock Paper Scissors
@@ -112,6 +112,6 @@ Next we selected all the elements and put it in the objects<br>
 Next we initialized global array winner to keep track of winning<br>
 We did event listener inside a for loop<br>
 Next we choose 1/3 of each of Rock Paper Scissors <br>
-Else<br>
+We needed to see who won so we created a quick little function checkWinners and it is a combination of who selected what <br>
 add a space to the level<br> 
 console.log(level)<br>
