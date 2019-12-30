@@ -16,8 +16,6 @@ modified: 2019-12-30T15:39:55-04:00
 ## Rock Paper Scissors
 
 
-Mini app for rock paper scissors
-
 ~~~
 <html>
 
@@ -32,7 +30,6 @@ Mini app for rock paper scissors
     <button type="button">Paper</button>
     <button type="button">Scissors</button>
 ~~~
-
 ~~~
 const message = document.querySelector(".message");
         const score = document.querySelector(".score");
@@ -104,14 +101,7 @@ const message = document.querySelector(".message");
                 }
             }
         }
+
 ~~~
 ___
 
-First we build the html structure all the components we are going to need for the game play<br>
-Next we selected all the elements and put it in the objects<br>
-Next we initialized global array winner to keep track of winning<br>
-We did event listener inside a for loop<br>
-Next we choose 1/3 of each of Rock Paper Scissors <br>
-We needed to see who won so we created a quick little function checkWinners and it is a combination of who selected what <br>
-add a space to the level<br> 
-console.log(level)<br>
