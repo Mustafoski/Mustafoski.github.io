@@ -28,6 +28,15 @@ function reverse(str){
 	return arr.join('');
 }
 ~~~
-We take the parameter str and we split into array into the array varable
-Then we reverse the array and in the end we join the reversed array;
 
+We create a function in our case called reverse with a parameter I choose *str* 
+JavaScript have many String Helper Methods that we can use to make our development easier and we will use some of them.
+<br>
+We create a const arr to hold the value that it will passed into the parameter *str* and we split the value into array. 
+<br>
+This will look like this if *str* = apple it will split into ['a','p','p','l','e'];
+<br>
+Then we use the String Helper Method reverse() to the arr constant to reverse the array into 
+['e','l','p','p','a'];
+<br>
+At the end we must return some value and we return the arr reversed and we chain another String Helper Method join('') which will join the array into full variable String (not an array ) in our case it will join the arr into 'leppa'
