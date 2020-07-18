@@ -31,4 +31,12 @@ function tripleAdd(num1) {
 tripleAdd(10)(20)(30);
 ~~~
 
-So we have a Function that is returning a Function which in turn it returns another Function that is returning our total.
+First we need to know is that we don't invoke 3 functions but one function called tripleAdd and we invoke the returns inside tripleAdd.
+<br>
+So we define a function tripleAdd and it will take our first number as parameter in our case num1.
+Inside a tripleAdd all we want to do is to return another function and this function will take our second number num2 as a parameter. 
+<br>
+Inside the second function we return a third function and this function will take third number as a parameter in our case num3.
+<br>
+Finally we return num1+num2+num3.
+So we have a function that returns a function and that function returns third function and in the end we add all the function parameters
