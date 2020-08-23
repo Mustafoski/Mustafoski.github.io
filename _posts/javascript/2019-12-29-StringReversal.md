@@ -44,9 +44,10 @@ We create for of loop to loop the individual letters. For further and better exp
 With the for of loop we loop the individual letters one by one. Then we use the previously created variable reversed ( remember we initialized to empty string so can be populated ). And inside the loop we write this statemenet reversed = character + reversed.
 <br>
 First character as you can see is variable that we choose to represent the individiual letters. Now let's imagine => 
-'' = character(letter) + '' => the result will be '' = a + '' which will be concatenated to  '' = a Second iteration will be a = p + a  => a = pa
-Third iteraration will be  pa = p + pa => a = ppa
-Fourth iteration will be ppa = l + ppa => ppa = lppa
-Fifth iteration will be  lppa = e + lppa => lppa = elppa
-If there are no more letters from the loop we return reversed.
+'' = character(letter) + '' the result will be '' = a + '' which will be concatenated to '' = a <br>
+<br>Second iteration will be a = p + a  => a = pa
+<br>Third iteraration will be  pa = p + pa => a = ppa
+<br>Fourth iteration will be ppa = l + ppa => ppa = lppa
+<br>Fifth iteration will be  lppa = e + lppa => lppa = elppa
+<br>If there are no more letters from the loop we return reversed.
 And in our case reversed = elppa
