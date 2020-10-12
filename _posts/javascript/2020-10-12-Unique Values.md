@@ -18,10 +18,10 @@ modified: 2020-10-12T15:39:55-04:00
 Unique Values is when in a string every letter is unique if they are all different unique then it is true of not like the second example if there are duplicates than it is false.
 
 ___
-Given a sentence, return first letter capitalized
-> ##For Example
-  abcde => true
- abcda => false
+
+> ##For Example<br>
+  abcde => true<br>
+ abcda => false<br>
 >
 ##
 <br>
