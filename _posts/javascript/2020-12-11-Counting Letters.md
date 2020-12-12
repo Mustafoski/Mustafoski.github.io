@@ -19,7 +19,7 @@ Counting Letters is when you count the letters of each one in the sentence and r
 ___
 
 > ##For Example<br>
- javascript is a great language=> javascript<br>
+ javascript is a great language=> javascript <br>
 
 >
 ##
