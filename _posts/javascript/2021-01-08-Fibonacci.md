@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "LinkedList"
+title: "Fibonacci "
 comments: true
 share: true
 modified:
@@ -13,9 +13,8 @@ date: 2021-01-08T15:39:55-04:00
 modified: 2021-01-08T15:39:55-04:00
 ---
 
-## LinkedList
-SLinkedList is data structure that is good for lists.
-
+## Fibonacci
+In mathematics, the Fibonacci numbers, commonly denoted Fn, form a sequence, called the Fibonacci sequence, such that each number is the sum of the two preceding ones, starting from 0 and 1. 
 ___
 
 > ##For Example<br>
