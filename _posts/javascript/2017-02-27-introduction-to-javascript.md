@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Introductiont"
+title: "Introduction"
 comments: true
 share: true
 modified:
