@@ -96,39 +96,40 @@ meanMedianMode([9,10,23,10,23,9]);
 
 
 ~~~
-We create a function meanMedianMode(array) also we define tree other function 
-1. function getMean(array) 
-2. function getMedian(array)
-3. function getMode(array)
+We create a function meanMedianMode(array) also we define tree other function <br>
+1. function getMean(array) <br>
+2. function getMedian(array)<br>
+3. function getMode(array)<br>
 
 <br><br>
-fucntion meanMedianMode(array) {
-  return {
-    mean:getMean(array),
-    median:getMedian(array),
-    mode:getMode
-  }
-}
+function meanMedianMode(array) {<br>
+  return {<br>
+    mean:getMean(array),<br>
+    median:getMedian(array),<br>
+    mode:getMode<br>
+  }<br>
+}<br>
 
 <br><br>
 
 
-function getMean(array) {
-  var sum = 0;
+function getMean(array) {<br> 
+  var sum = 0;<br>
   
   array.forEach(num => {
     sum += num;
+
   });
-  
-  var mean = sum / array.length;
-  return mean;
+  <br>
+  var mean = sum / array.length;<br>
+  return mean;<br>
 }
 
 <br><br>
 
-function getMedian(array) {
-  array.sort(function(a, b){return a-b});
-  var median;
+function getMedian(array) {<br>
+  array.sort(function(a, b){return a-b});<br>
+  var median;<br>
   
   if (array.length % 2 !== 0) {
     median = array[Math.floor(array.length / 2)];
@@ -140,11 +141,11 @@ function getMedian(array) {
   }
   
   return median;
-}
+}<br>
 
 <br><br>
-function getMode(array) {
-  var modeObj = {};
+<br>function getMode(array) {
+  <br>var modeObj = {};
   
   // create modeObj
   array.forEach(num => {
