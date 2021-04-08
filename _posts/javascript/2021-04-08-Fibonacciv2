@@ -1,0 +1,74 @@
+---
+layout: post
+title: "Fibonacci-v2"
+comments: true
+share: true
+modified:
+categories: javascript
+excerpt:
+tags: []
+image:
+  feature:
+date: 2021-08-04T15:39:55-04:00
+modified: 2019-08-04T15:39:55-04:00
+---
+
+## Fibonacci-v2
+
+Write a program that prints the numbers from 1 to n. But for multiples of three print "Fizz" instead of the number and for the multiples of five print "Buzz". For numbers which are multiples of both three and five print "FizzBuzz".
+
+___
+
+> ##For Example
+[
+  1,  2,  3, 5,
+  8, 13, 21
+]
+Should return true<br>
+##
+<br>
+
+___
+
+
+~~~
+function generateFibonacci(howMany) {
+  let x = 1;
+  let y = 2;
+  let sequence = [x, y];
+  Array(howMany)
+    .fill()
+    .forEach(() => {
+      let sum = x + y;
+      sequence.push(sum);
+      x = y;
+      y = sum;
+    });
+  return sequence;
+}
+
+console.log(generateFibonacci(5));
+
+~~~
+
+___
+
+First we create a function or also called method in this case fizzBuzz with a parameter of *n*. 
+As the description above state if we have number divisble by 3 we console.log 'fizz' 
+If we have number divisible by 5 we console.log 'buzz'
+And if we have number that is divisible by 3 and 5 we console.log 'fizzbuzz';
+
+We start with a loop in our case for loop, we initiate let i = 1; then for boolean expression we loop untill i is less or equal to the parameter *n*
+And for the last piece of for loop we increment by 1;
+
+
+Then we use several if and else if statements with the remainder operator to see witch number divisible by 5 or 3 or 5 and 3 is equal to 0;
+
+1. if *i* is divisible by 15 ( which is the last number that is divisible by both 3 and 5) we console.log('fizzbuzz');
+or should we say if 15 module 5 === 0 and 15 module 3 === 0 we get fizzbuzz
+
+2. else if the number is only divisible by 3 we return 'fizz' 
+
+3. else if the number is only divisible by 5 we return 'buzz'
+
+4. and rest of the numbers used in else statement we return the number from the for loop in this case *i*
