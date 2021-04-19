@@ -45,5 +45,13 @@ console.log(factorial(4))
 
 ___
 
+We create function factorial with parameter num.<br>
+Then we do check if num === 1 we return num; <br>
 
-
+in the else clause we return the num * factorial(num-1)
+So for example num is 
+4 * with factorial(4-1)
+3 * with factorial(3-1)
+2 * with factorial(2-1)
+1 will go throuh the if statement 
+so in the end 4 * 3 * 2 * 1 = 24 

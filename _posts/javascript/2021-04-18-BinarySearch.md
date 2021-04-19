@@ -10,10 +10,11 @@ tags: []
 image:
   feature:
 date: 2021-04-18T15:39:55-04:00
-modified: 2019-04-18T15:39:55-04:00
+modified: 2021-04-18T15:39:55-04:00
 ---
 
 ## BinarySearch
+<br>
 In computer science, binary search, also known as half-interval search, logarithmic search, or binary chop, is a search algorithm that finds the position of a target value within a sorted array. Binary search compares the target value to the middle element of the array.
 ___
 
@@ -47,4 +48,3 @@ binarySearch([5, 7, 12, 16, 36, 39, 42, 56, 71], 56);
 
 ___
 
-Binary Search 
