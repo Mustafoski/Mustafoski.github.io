@@ -31,7 +31,7 @@ function tripleAdd(num1) {
 tripleAdd(10)(20)(30);
 ~~~
 
-First we need to know is that we don't invoke 3 functions but one function called tripleAdd and we invoke the returns inside tripleAdd.
+First we need to know is that we don't invoke 3 functions but one function called tripleAdd and we invoke the returns inside tripleAdd.N
 <br>
 So we define a function tripleAdd and it will take our first number as parameter in our case num1.
 Inside a tripleAdd all we want to do is to return another function and this function will take our second number num2 as a parameter. 
