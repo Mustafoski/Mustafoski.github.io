@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Palindrom-v5"
+title: "ArrayConvertion"
 comments: true
 share: true
 modified:
@@ -9,12 +9,11 @@ excerpt:
 tags: []
 image:
   feature:
-date: 2021-07-17T15:39:55-04:00
-modified: 2021-07-17T15:39:55-04:00
+date: 2021-07-18T15:39:55-04:00
+modified: 2021-07-18T15:39:55-04:00
 ---
 
-## Palindrom v5
-
+## ArrayConvertion
 
 Given an array of 2k integers we perfrom the following operations until the array contains only one element.
 1. On the 1st,3rd,5th etc. iterations (1-based) replace each pair of consecutive elements with their sum. <br>
