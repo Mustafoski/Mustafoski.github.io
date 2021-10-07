@@ -13,7 +13,7 @@ date: 2021-11-18T15:39:55-04:00
 modified: 2021-11-18T15:39:55-04:00
 ---
 
-## fibonacciIterativeRecursive
+## FibonacciIterativeRecursive
 
 Finding wether if algorithm can works recorsevily
 
