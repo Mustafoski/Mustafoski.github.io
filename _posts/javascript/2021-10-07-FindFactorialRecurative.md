@@ -13,18 +13,18 @@ date: 2021-10-18T15:39:55-04:00
 modified: 2021-10-18T15:39:55-04:00
 ---
 
-## FindFactorialRecurative
+## fibonacciIterativeRecursive
 
-Finding wether if algorithm can works recorsevily
+Finding Fibonacci Numbers Recursive
 
 Example:<br>
-findFactorialRecurative(5)} 24  <br>
+fibonacciIterativeRecursive(8)} 21  <br>
 
 
 
 
 ~~~
-function findFactorialRecurative(number) {
+function fibonacciIterativeRecursive(number) {
   let answer = 1;
   if (number === 2) {
     answer = 2;
@@ -35,14 +35,14 @@ function findFactorialRecurative(number) {
   return answer
 }
 
-findFactorialRecurative(5)} 24
+fibonacciIterativeRecursive(5)} 24
 
 }
 
 ~~~
 ___
 
-We create a function findFactorialRecurative with parameter of number and we create a variable answer to be equal to 1 so we can keep track if the elements <br>
+We create a function fibonacciIterativeRecursive with parameter of number and we create a variable answer to be equal to 1 so we can keep track if the elements <br>
 
 We check wheter number is equal to 2 and if it is we assing answer to 2.<br>
 
