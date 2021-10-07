@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "FindFactorialRecursive"
+title: "FindFactorialRecurative"
 comments: true
 share: true
 modified:
@@ -9,16 +9,16 @@ excerpt:
 tags: []
 image:
   feature:
-date: 2021-07-18T15:39:55-04:00
-modified: 2021-07-18T15:39:55-04:00
+date: 2021-10-18T15:39:55-04:00
+modified: 2021-10-18T15:39:55-04:00
 ---
 
-## FindFactorialRecursive
+## FindFactorialRecurative
 
 Finding wether if algorithm can works recorsevily
 
 Example:<br>
-console.log(ArrayConvertion([1,2,3,4,5,6,7,8])) 186 <br>
+findFactorialRecurative(5)} 24  <br>
 
 
 
