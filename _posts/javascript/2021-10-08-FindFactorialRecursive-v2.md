@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "FindFactorialRecursive"
+title: "Find Factorial Recursive"
 comments: true
 share: true
 modified:

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "FibonacciIterative"
+title: "Fibonacci Iterative"
 comments: true
 share: true
 modified:
@@ -13,7 +13,7 @@ date: 2021-10-09T15:39:55-04:00
 modified: 2021-10-09T15:39:55-04:00
 ---
 
-## FibonacciIterative
+## Fibonacci Iterative
 
 Finding wether if algorithm can works recorsevily
 

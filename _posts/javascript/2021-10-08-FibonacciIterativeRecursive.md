@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "fibonacciIterativeRecursive"
+title: "fibonacci Iterative Recursive"
 comments: true
 share: true
 modified:

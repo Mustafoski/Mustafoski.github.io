@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "FindFactorialRecurative"
+title: "Find Factorial Recurative"
 comments: true
 share: true
 modified:
@@ -13,7 +13,7 @@ date: 2021-10-9T15:39:55-04:00
 modified: 2021-10-9T15:39:55-04:00
 ---
 
-## fibonacciIterativeRecursive
+## Fibonacci Iterative Recursive
 
 Finding Fibonacci Numbers Recursive
 
