@@ -13,7 +13,7 @@ date: 2021-10-10T15:39:55-04:00
 modified: 2021-10-18T15:39:55-04:00
 ---
 
-## FindFactorialRecursive
+## Find Factorial Recursive
 
 Finding wether if algorithm can works recorsevily
 
