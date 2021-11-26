@@ -1,6 +1,6 @@
 ---
 layout post
-title Maximum Slice Problem
+title "Maximum Slice Problem"
 comments true
 share true
 modified
