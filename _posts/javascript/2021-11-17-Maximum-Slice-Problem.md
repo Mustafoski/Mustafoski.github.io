@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Maximum Slice Problem"
+title: "Brackets"
 comments: true
 share: true
 modified:
@@ -9,68 +9,61 @@ excerpt:
 tags: []
 image:
   feature:
-date: 2021-11-26T15:39:55-04:00
-modified: 2021-11-26T15:39:55-04:00
+date: 2021-11-17T15:39:55-04:00
+modified: 2021-11-17T15:39:55-04:00
 ---
 
-##Maximum Slice Problem
+## Brackets
 
-The problem is to find the maximum sum of a sub-array of a given integer array. The strategy is to keep track of the sum of current element + previous element and compare it to the current element to find the local max.
-
+Given an expression string exp, write a program to examine whether the pairs and the orders of “{“, “}”, “(“, “)”, “[“, “]” are correct in exp.
 
 Example:<br>
-console.log(solution([4,8,2,6,7],[0,1,1,0,0])); => 2 <br>
-console.log(solution([4,3,2,1,5],[0,1,0,0,0])); => 2 <br>
+console.log(Brackets("()[]()[]{}")) 1 <br>
+console.log(Brackets("([{}])")) 1 <br>
+console.log(Brackets("()]]"))  0 <br>
 
 
 
 
 ~~~
-function solution(A, B) {
+function Brackets(input) {
   let stack = [];
-  let survivors = 0;
-
-  for(let i = 0; i < A.length;i++){
-    let weight = A[i];
-    if (B[i]=== 1) {
-      stack.push(weight)
-    } else {
-      let weightDown = stack.length === 0 ? -1 : stack.pop();
-      while(weightDown !== -1 && weightDown < weight)
-          weightDown= stack.length === 0 ? -1 : stack.pop();
-      if (weightDown === -1) 
-        survivors +=1;
-       else 
-        stack.push(weightDown);      
+  for(const c of input) {
+    if (c === '{' || c === '[' || c === '(' ){
+      stack.push(c);
+    } else if (c ===  '}') {
+      if(stack.length === 0 || stack.pop() !== '{') return 0;
+    }else if (c ===  ']') {
+      if(stack.length === 0 || stack.pop() !== '[') return 0;
+    }else if (c ===  ')') {
+      if(stack.length === 0 || stack.pop() !== '(') return 0;
+}
     }
+    return stack.length ? 0 : 1
   }
 
-  return survivors + stack.length;
-}
+console.log(Brackets("()[]()[]{}"))
+console.log(Brackets("([{}])"))
+console.log(Brackets("()]]"))
 
-console.log(solution([4,8,2,6,7],[0,1,1,0,0]));
-console.log(solution([4,3,2,1,5],[0,1,0,0,0]));
 ~~~
 ___
-We create a function called Solution with parameters called *A* and *B* we create an array called *stack* and counter called *survivors* = 0 to hold all of the numbers;
+We create a function called Brackets with parameter called *input* and we create an array called    *stack* to hold all of the brackets;
 <br>
-We loop with for of loop to loop from 0 untill i is less than A.lenght, then we increment
+We loop with for of loop where we create variable c of input and we check if c is '(' or c is '{' or c is '[' opening parenthesis. And if we find we push into the array variable stack with JavaScript push method.
 <br>
-We create a variable named weight to hold A[i] variables. Then we do If statement to check if 
-B[i]=== 1; And if it is we use the temporary variable array variable stack to push the new item weight.
+Then we create 3 if else statements for each of the individual parenthesis so we have else if we have closed parenthesis 
 <br>
-Else we create another temporary variable weightDown that is equal to if  stack.length === 0 or (?) -1 Else (:) stack.pop(); we remove item from the end. 
-<br>
-I want to mention I have used turnery operators so you probably need to check them to.
+1st else if (c ===  '}')
+We check if the stack.length === 0 or stack.pop() pop() is another JavaScript method that take the last added in this case stack.pop() is not equal to the '{' we return 0 which means it faild
 <br> 
-Then we do another loop while loop to check these conditions weightDown = stack.length === 0 ? 
-(true) return -1 : (or) stack.pop()
+2nd else if (c ===  ']')
+We check if the stack.length === 0 or stack.pop() pop() is another JavaScript method that take the last added in this case stack.pop() is not equal to the '[' we return 0 which means it faild
 <br>
-The we use weightDown = to check stack.length === 0 ? -1 : stack.pop()
+3rd else if (c ===  ')')
+We check if the stack.length === 0 or stack.pop() pop() is another JavaScript method that take the last added in this case stack.pop() is not equal to the '(' we return 0 which means it faild
  <br>
-We do another if conditional to check if weightDown === -1 we increment survivors by 1
-Else stack.pop(weightDown)
+At the end we return stack.length ? (true => there is something left) 0 : 1
 <br>
-In the end we return survivors + stack.length;
 
 
