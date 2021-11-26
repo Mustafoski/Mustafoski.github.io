@@ -13,14 +13,14 @@ date 2021-11-26T153955-0400
 modified 2021-11-26T153955-0400
 ---
 
-## Maximum Slice Problem
+##Maximum Slice Problem
 
 The problem is to find the maximum sum of a sub-array of a given integer array. The strategy is to keep track of the sum of current element + previous element and compare it to the current element to find the local max.
 
 
 Examplebr
-console.log(solution([4,8,2,6,7],[0,1,1,0,0])); = 2 br<br>
-console.log(solution([4,3,2,1,5],[0,1,0,0,0])); = 2 br<br>
+console.log(solution([4,8,2,6,7],[0,1,1,0,0])); = 2 br
+console.log(solution([4,3,2,1,5],[0,1,0,0,0])); = 2 br
 
 
 
@@ -48,8 +48,8 @@ function solution(A, B) {
   return survivors + stack.length;
 }
 
-console.log(solution([4,8,2,6,7],[0,1,1,0,0])); => 2
-console.log(solution([4,3,2,1,5],[0,1,0,0,0])); => 2
+console.log(solution([4,8,2,6,7],[0,1,1,0,0])); 2
+console.log(solution([4,3,2,1,5],[0,1,0,0,0])); 2
 ~~~
 ___
 We create a function called Solution with parameters called A and B we create an array called stack and counter called survivors = 0 to hold all of the numbers;
