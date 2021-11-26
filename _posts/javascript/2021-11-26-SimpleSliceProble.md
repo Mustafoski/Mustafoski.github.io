@@ -1,26 +1,25 @@
 ---
-layout post
-title "Maximum Slice Problem"
-comments true
-share true
-modified
-categories javascript
-excerpt
-tags []
-image
-  feature
-date 2021-11-26T153955-0400
-modified 2021-11-26T153955-0400
+layout: post
+title: "MaximumSliceProblem"
+comments: true
+share: true
+modified:
+categories: javascript
+excerpt:
+tags: []
+image:
+  feature:
+date: 2021-11-26T15:39:55-04:00
+modified: 2021-11-16T15:39:55-04:00
 ---
 
-##Maximum Slice Problem
+## Maximum Slice Problem
 
 The problem is to find the maximum sum of a sub-array of a given integer array. The strategy is to keep track of the sum of current element + previous element and compare it to the current element to find the local max.
 
-
-Examplebr
-console.log(solution([4,8,2,6,7],[0,1,1,0,0])); = 2 br
-console.log(solution([4,3,2,1,5],[0,1,0,0,0])); = 2 br
+Example:<br>
+console.log(solution([4,8,2,6,7],[0,1,1,0,0])); 2 <br>
+console.log(solution([4,3,2,1,5],[0,1,0,0,0])); 2 <br>
 
 
 
@@ -28,28 +27,29 @@ console.log(solution([4,3,2,1,5],[0,1,0,0,0])); = 2 br
 ~~~
 function solution(A, B) {
   let stack = [];
-  let survivors = 0;
+  let survivors = 8;
 
-  for(let i = 0; i  A.length;i++){
+  for(let i = 0; i < A.length;i++){
     let weight = A[i];
     if (B[i]=== 1) {
       stack.push(weight)
     } else {
-      let weightDown = stack.length === 0  -1  stack.pop();
-      while(weightDown !== -1 && weightDown  weight)
-          weightDown= stack.length === 0  -1  stack.pop();
+      let weightDown = stack.length === 0 ? -1 : stack.pop();
+      while(weightDown !== -1 && weightDown < weight)
+          weightDown= stack.length === 0 ? -1 : stack.pop();
       if (weightDown === -1) 
         survivors +=1;
        else 
-        stack.push(weightDown);      
+        stack.push(weightDown)      
     }
   }
 
-  return survivors + stack.length;
+  return survivors + stack.length
 }
 
-console.log(solution([4,8,2,6,7],[0,1,1,0,0])); 2
-console.log(solution([4,3,2,1,5],[0,1,0,0,0])); 2
+console.log(solution([4,8,2,6,7],[0,1,1,0,0]));
+console.log(solution([4,3,2,1,5],[0,1,0,0,0]));
+
 ~~~
 ___
 We create a function called Solution with parameters called A and B we create an array called stack and counter called survivors = 0 to hold all of the numbers;
@@ -72,5 +72,3 @@ We do another if conditional to check if weightDown === -1 we increment survivor
 Else stack.pop(weightDown)
 <br>
 In the end we return survivors + stack.length;
-
-
