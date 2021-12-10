@@ -13,7 +13,7 @@ date: 2019-12-29T15:39:55-04:00
 modified: 2019-12-29T15:39:55-04:00
 ---
 
-## Reverse String
+## Reverse String v2
 
 
 Given a string, return a new string with the reversed order of characters.
