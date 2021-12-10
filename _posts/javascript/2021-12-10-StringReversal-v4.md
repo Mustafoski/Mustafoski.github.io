@@ -24,7 +24,7 @@ reverse('Greetings') = 'sgniteerG'<br>
 
 ~~~
 function reverse(str) {
- return str.split('').reduce(() => {
+ return str.split('').reduce((character, reversed) => {
     return character + reversed
   }, '')
 }
