@@ -19,8 +19,8 @@ modified: 2021-07-17T15:39:55-04:00
 Given a string, return a new string with the reversed order of characters.
 
 Example:<br>
-console.log(checkPalindrom('Red -rum-, sir,-is-murder')) true <br>
-console.log(checkPalindrom('I got up early this morning')) false
+console.log(checkPalindrom('hannah')) true <br>
+console.log(checkPalindrom('apple'))  false <br>
 
 
 
@@ -36,8 +36,8 @@ function checkPalindrom(str) {
   return tempStr === second;
 }
 
-console.log(checkPalindrom('Red -rum-, sir,-is-murder')) true
-console.log(checkPalindrom('I got up early this morning')) false
+console.log(checkPalindrom('hannah')) true 
+console.log(checkPalindrom('apple'))  false 
 }
 
 ~~~

@@ -13,13 +13,14 @@ date: 2021-07-16T15:39:55-04:00
 modified: 2021-07-16T15:39:55-04:00
 ---
 
-## Palindrom
+## Palindrom v4
 
 
 Given a string, return a new string with the reversed order of characters.
 
 Example:<br>
-console.log(checkPalindrom("Was it a car or a cat I saw"))
+console.log(checkPalindrom('hannah')) true <br>
+console.log(checkPalindrom('apple'))  false <br>
 
 
 
@@ -28,12 +29,15 @@ function checkPalindrom(str) {
   str = str.toLowerCase();
   let first = str.split(' ').join('')
   let second = first.split('').reverse().join('')
+
   console.log(second) wasitacaroracatisaw
   console.log(first) wasitacaroracatisaw
 
 
   return first === second
 }
+console.log(checkPalindrom('hannah')) true 
+console.log(checkPalindrom('apple'))  false 
 
 ~~~
 ___

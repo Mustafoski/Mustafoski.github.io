@@ -9,21 +9,19 @@ excerpt:
 tags: []
 image:
   feature:
-date: 2019-12-29T15:39:55-04:00
-modified: 2019-12-29T15:39:55-04:00
+date: 2021-12-11T15:39:55-04:00
+modified: 2021-12-11T15:39:55-04:00
 ---
 
-## Palindrom
+## Palindrom v2
 
 
 Given a string, return a new string with the reversed order of characters.
 
 Example:<br>
-reverse('apple') = 'leppa'<br>
-reverse('hello') = 'olleh'<br>
-reverse('Greetings') = 'sgniteerG'<br>
 
-
+console.log(reverse('hannah')) true <br>
+console.log(reverse('apple'))  false <br>
 
 ~~~
 function reverse(str) {
@@ -31,7 +29,8 @@ function reverse(str) {
 		return char === str[str.length - i -1];
 		});
 	}
-
+console.log(reverse('hannah'))
+console.log(reverse('apple'))
 ~~~
 ___
 

@@ -13,22 +13,16 @@ date: 2020-10-08T15:39:55-04:00
 modified: 2020-10-08T15:39:55-04:00
 ---
 
-## Palindrom
+## Palindrom v3
 
 A palindrome is a word, number, phrase, or other sequence of characters which reads the same backward as forward, such as ‘’taco cat’’ or madam or racecar or the number 10801
 
 ___
 Given a string, return true if the string is a palindrome or false if it is not.
 
-> ##For Example
-const test3 = Emir<br>
-const test4 = Palindrom<br>
-Should return false<br>
-const test = Anna<br>
-const test2 =Racecar<br>
-Should return true<br>
-##
-<br>
+##For Example
+console.log(reverse('hannah')) true <br>
+console.log(reverse('apple'))  false <br>
 
 ___
 
@@ -50,7 +44,8 @@ function isPalindrom(string) {
   }
 }
 
-isPalindrom("Madam I'm Adam") 
+console.log(isPalindrom('hannah')) true 
+console.log(isPalindrom('apple'))  false 
 ~~~
 
 function isPalindrom(string) { <br>
