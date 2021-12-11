@@ -30,10 +30,6 @@ function checkPalindrom(str) {
   let first = str.split(' ').join('')
   let second = first.split('').reverse().join('')
 
-  console.log(second) wasitacaroracatisaw
-  console.log(first) wasitacaroracatisaw
-
-
   return first === second
 }
 console.log(checkPalindrom('hannah')) true 
