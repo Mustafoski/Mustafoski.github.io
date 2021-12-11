@@ -35,15 +35,15 @@ function reverse(str) {
 ~~~
 ___
 
-For better explanation of this solution will be graphical 
-A B C B A
-every function works on arrays so we split(''). Then 
-every checks in this order.
-is A === A(last one) yes ok palindrom
-is B === B(before last) yes ok palindrom
-is C === C (C is only one )so palindrom.
-But unfortunatelly 
-the list goes on
-is B ==== B(index 1) palindrom
-is A ==== A (index 0) palindrom
+For better explanation of this solution will be graphical <br>
+A B C B A<br>
+every function works on arrays so we split(''). Then <br>
+every checks in this order.<br>
+is A === A(last one) yes ok palindrom<br>
+is B === B(before last) yes ok palindrom<br>
+is C === C (C is only one )so palindrom.<br>
+But unfortunatelly <br>
+the list goes on<br>
+is B ==== B(index 1) palindrom<br><br>
+is A ==== A (index 0) palindrom<br>
 
