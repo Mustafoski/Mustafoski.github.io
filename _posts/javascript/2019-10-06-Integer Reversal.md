@@ -9,26 +9,22 @@ excerpt:
 tags: []
 image:
   feature:
-date: 2019-10-06T15:39:55-04:00
-modified: 2019-10-06T15:39:55-04:00
+date: 2021-12-13T15:39:55-04:00
+modified: 2021-12-13T15:39:55-04:00
 ---
 
 ## Integer Reversal
 
 Given an Integer, return an integer that is the reverse ordering of numbers.
 
-___
 
-> ##For Example
-reverseInt(12) = 21 <br>
-reverseInt(876) = 678<br>
-reverseInt(250) = 52<br>
-reverseInt(-15) =51-<br>
-Should return true<br>
-##
+
+##For Example
+console.log(reverseInt(10)) => 1 <br>
+console.log(reverseInt(24)) => 42 <br>
 <br>
 
-___
+
 
 
 ~~~
@@ -48,8 +44,18 @@ function reverseInt(n) {
 ~~~
 
 ___
-
-1. We take the parameter and somehow treat it like a string 
-2. We will split that number, reverse and join
-3. Then we should take care of the examples like "51-" this will continue to be string so we need to parse it to Integer with parseInt method.
-4. If we have number e.g. -5 we need to maintain the sign.
+We create a function reverseInt(n) parameter *n*. 
+<br>
+We create a variable *reversed* and on that variable we chain couple of build in JavaScript methods on the parameter *n*
+<br>
+n.toString() This method toString() turns every value to string we need to turn to string so that after we can turn into an array.
+<br>
+After toString().split('') we chain .split('') without space between the quotes so the string will be converted into an array of single items.
+<br>
+toString().split('').reverse() we chain .reverse() method to reverse the order of the items of the newly created array.
+<br>
+toString().split('').reverse().join('') in the end we join the reversed order of items into string with .join('') method with quotes inside join.
+<br>
+But if the value of *n* is negative number for example -5 will be reversed to 5- which we don't want that so we check with if condition *n* < 0 and if true we parseInt the *reversed* variable and multiply with -1 to get positive number.
+<br>
+In the end we return parsedInt again *reversed* variable 
