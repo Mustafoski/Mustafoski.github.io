@@ -9,8 +9,8 @@ excerpt:
 tags: []
 image:
   feature:
-date: 2019-12-29T15:39:55-04:00
-modified: 2019-12-29T15:39:55-04:00
+date: 2021-12-16T15:39:55-04:00
+modified: 2021-12-16T15:39:55-04:00
 ---
 
 ## Array Chunk
@@ -19,18 +19,23 @@ modified: 2019-12-29T15:39:55-04:00
 Given an array of chunk size, divide the array into many subarrays where each subarray is of length size.
 
 Example:<br>
-chunk([1,2,3,4],2) = [[1,2],[3,4]]<br>
-chunk([1,2,3,4,5],2) = [[1,2],[3,4],[5]]<br>
-chunk([1,2,3,4,5,6,7,8],3) = [[1,2,3],[4,5,6],[7,8,]]<br>
-chunk([1,2,3,4,5],4) = [[1,2,3,4],[5]<br>
-chunk([1,2,3,4,5],10) = [[1,2,3,4,5]]<br>
-<br>
+console.log(chunk([1,2,3,4],2)) <br>
+[[1], [2], [3], [4]]<br>
+console.log(chunk([1,2,3,4,5],10))<br>
+ [[1], [2], [3], [4], [5]]<br>
+console.log(chunk([1,2,3,4,5,6,7,8],3)) <br>
+[[1], [2], [3], [4], [5], [6], [7], [8]]<br>
+console.log(chunk([1,2,3,4,5],2))<br>
+[[1], [2], [3], [4], [5]]<br>
+<br><br>
+
+
 
 
 
 ~~~
 function chunk(array, size) {
-	const cunked = [];
+	const chunked = [];
 
 	for (let element of array) {
 		const last = chunked[chunked.lenght -1];
@@ -43,12 +48,28 @@ function chunk(array, size) {
 	}
 	return chunked;
 }
-~~~
-___
 
-We create empty array to hold chunks called chunked
-For each element in the unchuncked array
-Retreive the last element in chuncked
-If last element does not exist, or if its lenght is equal to chunk size.
-Then push a new chunk into chunked with the current element
-else add the current element into the chunk
+console.log(chunk([1,2,3,4],2)) 
+[[1], [2], [3], [4]]
+console.log(chunk([1,2,3,4,5],10))
+ [[1], [2], [3], [4], [5]]
+console.log(chunk([1,2,3,4,5,6,7,8],3)) 
+[[1], [2], [3], [4], [5], [6], [7], [8]]
+console.log(chunk([1,2,3,4,5],2))
+[[1], [2], [3], [4], [5]]
+~~~
+
+First we create a function chunk with 2 parameters *array* and *size* and first we will declare a new array that is going to hold all these different chunks named *chunked = []* 
+<br><br>
+Next we will iterate through the original *array* with for of loop. Inside we do temporary variable *last* = chunked[chunked.length - 1];
+<br><br>
+Now we check if that last element does not exist or if its length is equal to chunk size because if it is we want to push a new chunk into *chuncked* with the current element that we are iterating<br><br>
+
+Still inside the loop we check if (!last || last.length === *size*) if true we use the .push() JavaScript build in method to push in our case element. like chunked.push([element])
+
+<br><br>
+Lastly we need to take of is the case in which we already have a chunk but it is not yet full. So in that case we are going to take the current element and add it to the chunk and and the chunk in mind is *last*
+<br><br>
+Else last.push(element)
+<br><br>
+At the end we return chunked;
