@@ -65,7 +65,9 @@ Next we will iterate through the original *array* with for of loop. Inside we do
 <br><br>
 Now we check if that last element does not exist or if its length is equal to chunk size because if it is we want to push a new chunk into *chuncked* with the current element that we are iterating<br><br>
 
-Still inside the loop we check if (!last || last.length === *size*) if true we use the .push() JavaScript build in method to push in our case element. like chunked.push([element])
+Still inside the loop we check <br>
+#if(!last || last.length === *size*) 
+if true we use the .push() JavaScript build in method to push in our case element. like <br>chunked.push([element])
 
 <br><br>
 Lastly we need to take of is the case in which we already have a chunk but it is not yet full. So in that case we are going to take the current element and add it to the chunk and and the chunk in mind is *last*
