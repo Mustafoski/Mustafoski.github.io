@@ -46,7 +46,7 @@ We create a for of loop where we split with space between quotes like this for(l
 <br><br>
 Next we will take first character of each word so word at 0 and we will use toUpperCase() JavaScript method for capitalize letter or word.
 <br><br>
-Then we will join it with the rest of the word and we can get the rest of the word minus that first <b>character<b> by using the slice function
+Then we will join it with the rest of the word and we can get the rest of the word minus that first <b>character</b> by using the slice function
 <br><br>
 So we say word.slice(1) which means give me everything from the element at index 1 (second element) to the last character in the word
 <br><br>
