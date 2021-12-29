@@ -52,23 +52,23 @@ function steps(n) {
 ~~~
 ___
 
-First we create function in our case steps with only one parameter named n ( n is the number of rows as described in the example above)
-<br>
-We create a loop with let row = 0 (starting at 0); row < n and row ++
-We create also temporary variable called stair and initialize to an empty string;
-<br>
-inside the loop we create another loop for the columns so we create column variable to start at 0 to be less than n and to increment by 1 every iteration.
-<br>
-Now we check if (column <=  row) and if it is true stairs will concatenate with '#' otherwise stairs remains the same.
+First we create function in our case steps with only one parameter named *n* ( n is the number of rows as described in the example above)
+<br><br>
+We create a loop with let row = 0 (starting at 0); row < *n* and row ++ <br>
+We create also temporary variable called *stair* and initialize to an empty string; <br>
+<br><br>
+inside the loop we create another loop for the columns so we create column variable to start at 0 to be less than *n* and to increment by 1 every iteration.
+<br><br>
+Now we check if (column <=  row) and if it is true *stairs* will concatenate with '#' otherwise *stairs* remains the same.<br>
 For example if *n* is 3
-
-first loop row is 1 and in the second loop column is 1 so in our if statement we have If column is less or equal to row that it is true. This condition passes and we have one stairs '#'
-
-Second loop row is 2 and column is also 2 again the if condition passes but since stairs is now '#' we concatenate like this stairs = stairs + '#' so stairs from first loop is '#' than this statement is 
-stairs = '#' + '#' which makes stairs => '##'
-
-Third and final loop again row is 3 column is 3 the if condition passes and now we have stairs of '###'
-
-Since we initialize n to be 3 row and column loop fails and that bring us to the end.
-
-In the end we just console.log the stairs
+<br><br>
+first loop row is 1 and in the second loop column is 1 so in our if statement we have If column is less or equal to row that it is true. This condition passes and we have one *stairs* '#'
+<br><br>
+Second loop row is 2 and column is also 2 again the if condition passes but since *stairs* is now '#' we concatenate like this *stairs* = *stairs* + '#' so *stairs* from first loop is '#' than this statement is <br>
+*stairs* = '#' + '#' which makes *stairs* => '##'<br>
+<br><br>
+Third and final loop again row is 3 column is 3 the if condition passes and now we have *stairs* of '###'
+<br><br>
+Since we initialize *n* to be 3 row and column loop fails and that bring us to the end.
+<br><br>
+In the end we just console.log the *stairs*<br>
