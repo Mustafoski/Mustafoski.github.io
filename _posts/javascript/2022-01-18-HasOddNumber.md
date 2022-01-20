@@ -18,9 +18,9 @@ modified: 2022-01-18T15:39:55-04:00
 Odd numbers are whole numbers that cannot be divided exactly into pairs. Odd numbers, when divided by 2, leave a remainder of 1. 1, 3, 5, 7, 9, 11, 13, 15 … are sequential odd numbers. Odd numbers have the digits 1, 3, 5, 7 or 9 in their ones place.
 
 Example:<br>
-console.log(Brackets("()[]()[]{}")) 1 <br>
-console.log(Brackets("([{}])")) 1 <br>
-console.log(Brackets("()]]"))  0 <br>
+console.log(hasOddNumber([1,2,4,5])); true <br>
+console.log(hasOddNumber([2,4,6])); false  <br>
+
 
 
 
