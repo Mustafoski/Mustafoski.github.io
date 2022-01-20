@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "HasEvenNumber"
+title: "Has Only Even Number"
 comments: true
 share: true
 modified:
@@ -9,36 +9,36 @@ excerpt:
 tags: []
 image:
   feature:
-date: 2022-01-14T15:39:55-04:00
-modified: 2022-01-14T15:39:55-04:00
+date: 2022-01-12T15:39:55-04:00
+modified: 2022-01-12T15:39:55-04:00
 ---
 
-## HasEvenNumber
+## Has Only EvenNumber
 
 Even numbers are whole numbers that cannot be divided exactly into pairs. Odd numbers, when divided by 2, leave a remainder of 0. Even numbers have the digits 2, 4, 6, 8  in their ones place.
 
 Example:<br>
-console.log(hasEvenNumber([1,2,4,5])); true <br>
-console.log(hasEvenNumber([1,3,5])); false  <br>
+console.log(hasOnlyEvenNumber([1,2,4,5])); true <br>
+console.log(hasOnlyEvenNumber([1,3,5])); false  <br>
 
 
 
 
 ~~~
-function hasEvenNumber(arr){
+function hasOnlyEvenNumber(arr){
   return arr.some(function(val){
     return val % 2 === 0;
   })
 }
 
 let arr= [1,2,3,4,5,6,7,8,9,10];
-console.log(hasOddNumber(arr)); true
+console.log(hasOnlyEvenNumber(arr)); true
 
 ~~~
 ___
-We create a function called hasEvenNumber with parameter called *arr* 
+We create a function called hasOnlyEvenNumber with parameter called *arr* 
 <br><br>
-We return the *arr*.some some is build in JavaScript method that only one needs to be true from the array;
+We return the *arr*.every every is build in JavaScript method that needs all to be true from the array
 <br><br>
 We return *arr*.some(function(val){ <br> 
   return val %  2 === 0}) <br>
