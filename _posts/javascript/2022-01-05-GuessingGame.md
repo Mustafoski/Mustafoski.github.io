@@ -54,11 +54,17 @@ console.log(guessingGame(2)(4)); "Your guess is too high!"
 console.log(guessingGame(2)(3)); "Your guess is too low!"
 ~~~
 ___
-We create a function called specialMultiply with parameter called *a* and *b* 
+We create a function called guessingGame with parameter called *amount* and *answer* to be Math.floor(Math.random() *11); We alse created *guesses* that start at 0 and *completed* to start at false; 
 <br><br>
-We check if (arguments.length ===1) {} 
+We return callback function with parameter *guess* and check if(*!completed*) so if it is not completed we increment the guesses with guesss ++
 <br><br>
-If true we return another function with parameter *b* and return a*b
+If *guess* == *answer* then we make *completed* = true and return "You got it"
 <br><br>
-In the end we return again a*b
+Else if  guesses === amount we turn *completed*=true and return "No more guesses and answer was " + *answer*
+<br><br>
+Else if guess > answer we return "Your guess is too high!" 
+<br><br>
+Else if guess < answer we return "Your guess is too low!"
+<br><br>
+Else we return "You are all done playing!"
 <br><br>

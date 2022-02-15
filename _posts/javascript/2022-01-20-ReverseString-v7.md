@@ -13,7 +13,7 @@ date: 2022-01-20T15:39:55-04:00
 modified: 2022-01-20T15:39:55-04:00
 ---
 
-## Reverse String-v
+## Reverse String-v7
 
 Reverse String can be defined as an operation in which the original string which the user gives is modified in such a way that the characters in it are arranged in a reverse manner starting from the last character to the first character, thus by forming a new string which will be the exact reverse of the original
 
