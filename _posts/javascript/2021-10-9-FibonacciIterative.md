@@ -15,7 +15,8 @@ modified: 2021-10-09T15:39:55-04:00
 
 ## Fibonacci Iterative
 
-Finding wether if algorithm can works recorsevily
+Print out the n-th entry in the fibonacci series.
+The fibonacci series is an ordering of numbers where each number is the sum of the preceeding two.
 
 Example:<br>
 fibonacciIterative(8) 21  <br>
@@ -37,13 +38,13 @@ fibonacciIterative(8) 21
 ~~~
 ___
 
-We create a function fibonacciIterative with parameter of number <br>
-We create an array called *arr* that holds 0 and 1.<br>
-We create a for loop where we start from 2 where i is less than n + 1 and we increment by 1 <br>
-We use JavaScript build in method push to push to the *arr* (arr[i-2] + arr[i-1])
-
-
-We return arr[n] <br>
-
-In the end we return answer
+We create a function fibonacciIterative with parameter of number *n* and variable *arr*=[0,1]
+<br><br>
+We loop with for loop starting from 2 since we have the first two numbers in the result array, we iterate until is less or equal to *n* and *i*++
+<br><br>
+We use variable array *arr* and do ***arr.push(arr[i-2] + arr[i-1])*** 
+<br><br>
+push method adds item in the array and inside this push we have last number from the for loop and the one before that added
+<br><br>
+In the end we return ***return arr[n]***
 
