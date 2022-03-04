@@ -4,7 +4,7 @@ title: "LinkedList"
 comments: true
 share: true
 modified:
-categories: javascript
+categories: algorithms
 excerpt:
 tags: []
 image:
