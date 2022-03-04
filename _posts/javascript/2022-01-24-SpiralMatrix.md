@@ -121,6 +121,6 @@ Then we check the Bottom Row and we create for loop where *i* = *endColumn* *i*>
     startColumn++;***
 
 <br><br>
-In the end we return the *results* 
+In the end we return the return *results* 
 
   

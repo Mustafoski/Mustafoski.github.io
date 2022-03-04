@@ -9,13 +9,14 @@ excerpt:
 tags: []
 image:
   feature:
-date: 2021-10-10T15:39:55-04:00
-modified: 2021-10-10T15:39:55-04:00
+date: 2022-01-26T15:39:55-04:00
+modified: 2022-01-26T15:39:55-04:00
 ---
 
 ## Fibonacci  Recursive v2
 
-Finding wether if algorithm can works recorsevily
+Print out the n-th entry in the fibonacci series.
+The fibonacci series is an ordering of numbers where each number is the sum of the preceeding two.
 
 Example:<br>
 findFactorialRecurative(5)} 24  <br>
@@ -38,10 +39,9 @@ ___
 
 We create a function fib with parameter of *n* 
 <br><br>
+We check wheter *n* is less than 2 and if it is we return to n.
+<br><br>
+In the end we return fib(n-1) + fib (n-1) <br>
 
-We check wheter number is less than 2 and if it is we assing answer to n.<br>
 
-We return fibonacciIterativeRecursive(n-1) + fibonacciIterativeRecursive (n-1) <br>
-
-In the end we return answer
 
