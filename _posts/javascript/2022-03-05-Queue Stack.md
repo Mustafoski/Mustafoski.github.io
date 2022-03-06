@@ -15,7 +15,7 @@ modified: 2022-03-05T15:39:55-04:00
 
 ## Queue Stack
 
-Implement a Queue datastructure using two stacks. *Do not* create an array inside of the 'Queue' class. Queue should implement the methods 'add', 'remove', and 'peek'.
+Implement a Queue datastructure using two stacks. **Do not** create an array inside of the 'Queue' class. Queue should implement the methods 'add', 'remove', and 'peek'.
 For a reminder on what each method does, look back at the Queue exercise.
 --- Examples<br>
     const q = new Queue();<br>
@@ -50,7 +50,7 @@ class Stack {
 }
 
 module.exports = Stack;
-*****************************************************************************************************
+****************************************************************************************************
 const Stack = require('./stack');
 
 class Queue {
@@ -91,19 +91,74 @@ module.exports = Queue;
 
 ~~~
 ___
-We create a function called CarsPassing with parameter called *inputArray* we create an variable called *suffixSum* and it will be an array with size of *inputArray.length + 1* and initially we fill the array with 0. Next we create varible  *count* that we initialize to 0;
+First we create a class Stack and a field **data = []**
 <br><br>
-We create for loop where we start with *i* = *inputArray.length - 1*, second condition is *i* is bigger or equal to 0 and third condition is where we decrement i by 1;
+First method in the Stack class is **add** so we ***add(record) {
+    this.data.push(record);<br>***
+  }<br>
+Second method in the Stack class is **pop** so we <br>
+  ***pop() {<br>
+    return this.data.pop();<br>
+  }***<br>
+The last method in the Stack class is **peek** so we <br>
+  ***peek() {<br>
+    return this.data[this.data.length - 1];<br>
+  }***<br>
+In the end we module.exports = Stack;
 <br><br>
-The way we compute the *suffixSum* is to write *suffixSum[i] = inputArray[i] + suffixSum[i + 1];*
-*suffixSum* one position more than i and i + 1 is the reason why we have created the suffixSum to be one position bigger than our inputs.
+
+First we recive the Stack class like this ***const Stack = require('./stack');***
 <br><br>
-And in this way the suffix sum area is kindd of a table containing the numbers of cars that are still in front of us for each position.
+We create a class called **Queue** and initilized two fields  
+***this.first = new Stack();<br>
+  this.second = new Stack();***<br>
 <br><br>
-Next we have if statement *if (inputArray[i] === 0) count += suffixSum[i]* Meaning that the car is traveling EAST we need to update the count variable with count += suffixSum[i]
+We start with the add method ***add(record) {<br>
+    this.first.push(record);<br>
+  }***<br>
 <br><br>
-Final thing we have to do is another if statement *if (count > 1000000000) return -1;* If the count is bigger than 1,000,000,000 we return -1;  
+Then we go to the second method **Remove** ***remove() {
+    while (this.first.peek()) {
+      this.second.push(this.first.pop());
+    }
+    const record = this.second.pop();
+    while (this.second.peek()) {
+      this.first.push(this.second.pop());
+    }
+    return record;
+  }***
+  <br><br>
+  We loop with while loop until the last item in the array is there that is what peek is doing <br>
+  If there is an space in the first array we push second to the end of first array and we pop the <br>last item of the first array. In simple terms we swich **this.second** to be the last in **<br>this.first*** by using push and pop JavaScript methods.<br><br>
+  Then we create a **const record variable** that is equal to second.pop() the item we just retrieved. And ***while(this.second.peek()){
+    this.first.push(this.second.pop());
+  }
+  return record***
+  <br><br>
+  So we do the same thing only this time we take from second with pop method and that we push it to first. In the end I return **record**;
 <br> <br> 
-In the end we return count;
+Last method is peek method <br>
+***peek() {<br>
+    while (this.first.peek()) {<br>
+      this.second.push(this.first.pop());<br>
+    }<br><br>
+    const record = this.second.peek();<br>
+    while (this.second.peek()) {<br>
+      this.first.push(this.second.pop());<br>
+    }<br>
+    return record;<br>
+  }<br>
+}***<br>
+<br><Br>
+First we do a while loop to see if there is a remaining item and if there is we use like in remove<br> above we take last item with pop() from first field and we push it to the second field with push()<br>
+Then we create a **const record variable** that is equal to second.peek(). <br>
+And ***while(this.second.peek()){<br>
+    this.first.push(this.second.pop());<br><br>
+  }<br>
+  return record***
+  <br><br>
+While this.second.peek() so it checks if there is a variable and if there is it takes from second field with pop() and added with push() to the first.<br><br>
+
+In the end ***return record*** and **module.exports = Queue;**
  
 
