@@ -9,8 +9,8 @@ excerpt:
 tags: []
 image:
   feature:
-date: 2022-03-08T15:39:55-04:00
-modified: 2022-03-08T15:39:55-04:00
+date: 2019-12-22T15:39:55-04:00
+modified: 2019-12-22T15:39:55-04:00
 ---
 
 ## Absolute Values Sum Minization
