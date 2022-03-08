@@ -13,7 +13,8 @@ date: 2019-12-22T15:39:55-04:00
 modified: 2019-12-22T15:39:55-04:00
 ---
 
-## Absolute Values Sum Minization
+## Absolute Values Sum Minization 
+<br>
 Given a sorted array of integers a, find an integer x from a such that the value of 
 	abc(a[0] - x) + abs(a[1] - x) + ... + abc(a[a.length - 1] - x)
 is the smallest possible (here abc denotes the absolute value).
