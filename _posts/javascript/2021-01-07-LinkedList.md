@@ -18,14 +18,14 @@ SLinkedList is data structure that is good for lists.
 
 ___
 
-> ##For Example<br>
+##For Example<br>
 console.log(myLinkedList)=> LinkedList {
 							head:{value:10,next:null<br>
 							Tail:{value:10,next:null}
 							length:1 }
->
->
-##
+
+
+
 <br>
 
 
