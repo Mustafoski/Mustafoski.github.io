@@ -44,9 +44,13 @@ console.log(addTwoDigits(n))
 
 ~~~
 
-___
-
-1. We create a function with parameter n;
-2. We create variable nums to hold the single index where n is turned to String and splited into chunks.
-3. We return nums with reduce function where as parameters we use x and y (still strings...) and again we return but we parse x and y into numbers with parseInt.
-4. Lastly we add them together
+We create a function addTwoDigits with parameter **n** and local varable nums that is equal to **n.toString().split('')**
+<br><br>
+We convert **n** toString() which is build in JavScript method for converting to string and if we chain .split() we turn that string into an array.
+<b>
+The split() method divides a String into an ordered list of substrings, puts these substrings into an array, and returns the array. The division is done by searching for a pattern; where the pattern is provided as the first parameter in the method's call. -MDN
+<br><br>
+Lastly we return ***nums.reduce((x ,y) =? {
+  return parseInt(x) + parseInt(y)
+})
+<br><br>
