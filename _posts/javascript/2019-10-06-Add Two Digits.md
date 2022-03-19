@@ -52,5 +52,5 @@ The split() method divides a String into an ordered list of substrings, puts the
 <br><br>
 Lastly we return ***nums.reduce((x ,y) =? {
   return parseInt(x) + parseInt(y)
-})
+})***
 <br><br>
