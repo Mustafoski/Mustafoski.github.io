@@ -50,7 +50,7 @@ We convert **n** toString() which is build in JavScript method for converting to
 <br>
 The split() method divides a String into an ordered list of substrings, puts these substrings into an array, and returns the array. The division is done by searching for a pattern; where the pattern is provided as the first parameter in the method's call. -MDN
 <br><br>
-Lastly we return ***nums.reduce((x ,y) =? {
+Lastly we return ***nums.reduce((x ,y) => {
   return parseInt(x) + parseInt(y)
 })***
 <br><br>
