@@ -13,29 +13,29 @@ date: 2019-12-22T15:39:55-04:00
 modified: 2019-12-22T15:39:55-04:00
 ---
 
-## Adjecent Element Product
-
+#Adjecent Element Product
+<br>
  Given an array of integers, find the pair of adjacent elements that has the largest product and return that product.
-___
 
-> ##For Example
+
+**Example**
 For  n = [3,6,-2,-5,7,3] the output should be 7 * 3 =  return 21<br>
 
 Should return true<br>
 ##
 <br>
 
-___
+
 
 
 ~~~
-let n = [3,6,-2,-5,7,3]
+let inputArray = [3,6,-2,-5,7,3]
 
-function adjacentElementsProduct(n){
-  let largestProduct= n[0] * n[1];
+function adjacentElementsProduct(inputArray){
+  let largestProduct= inputArray[0] * inputArray[1];
   
-  for(let i = 1;i<n.length -1 ;i++ ){
-    const product = n[i] * n[i+1];
+  for(let i = 1;i<inputArray.length -1 ;i++ ){
+    const product = inputArray[i] * inputArray[i+1];
     
     largestProduct = largestProduct < product ? product : largestProduct
   }
@@ -43,15 +43,18 @@ function adjacentElementsProduct(n){
   return largestProduct
 }
 
-console.log(adjacentElementsProduct(n))
+console.log(adjacentElementsProduct(inputArray))
 
 ~~~
 
 ___
 
-1. We create function with parameter of n and above variable n that contains array of integer numbers;
-2. We create variable largestProduct to hold the largest product and we start with index 0 n[0] * n[1] index 1;
-3.We create for loop for the other values in that array not only 0 and 1 index but since we started with 0 index we start the loop with 1 e.g. i=1 then we loop until the last number but last number like in the example above 3 * nothing will give us NaN. So in the condition of for loop we do i < n.length - 1
-
-4. Then we use largestProduct to check if is smaller than product if so product is answer else largestProduct
-5. We return the largest product
+We create function called adjacentElementsProduct with parameter **inputArray** and local variable **largestProduct** that is equal to **inputArray** = **inputArray[0] * **inputArray**c
+<br><br>
+Then we create for loop that starts at 1 is less than **inputArray**.lenght - 1 and i++
+And inside we create variable **product** that is equal to **inputArray[i] * inputArray[i + 1];
+<br><br>
+Then we use **largestProduct = largestProduct < product ? product : largestProduct
+This means if the largest number is less than product return product else return lastproduct
+<br><br>
+In the end we **return largestProduct**
