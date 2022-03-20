@@ -54,7 +54,7 @@ We create function called adjacentElementsProduct with parameter **inputArray** 
 Then we create for loop that starts at 1 is less than **inputArray**.lenght - 1 and i++
 And inside we create variable **product** that is equal to **inputArray[i] * inputArray[i + 1];**
 <br><br>
-Then we use **largestProduct = largestProduct < product ? product : largestProduct
+Then we use **largestProduct = largestProduct < product ? product : largestProduct**
 This means if the largest number is less than product return product else return lastproduct
 <br><br>
 In the end we **return largestProduct**
