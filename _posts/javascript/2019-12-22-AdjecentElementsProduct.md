@@ -20,9 +20,6 @@ modified: 2019-12-22T15:39:55-04:00
 
 **Example**
 For  n = [3,6,-2,-5,7,3] the output should be 7 * 3 =  return 21<br>
-
-Should return true<br>
-##
 <br>
 
 
