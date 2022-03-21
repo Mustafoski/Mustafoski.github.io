@@ -13,7 +13,7 @@ date: 2019-12-22T15:39:55-04:00
 modified: 2019-12-22T15:39:55-04:00
 ---
 
-#All Longest Strings
+All Longest Strings
 
  Given an array of strings we look for the string with the most characters inside. They can be one , two etc...
 

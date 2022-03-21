@@ -13,7 +13,7 @@ date: 2019-12-22T15:39:55-04:00
 modified: 2019-12-22T15:39:55-04:00
 ---
 
-#Adjecent Element Product
+Adjecent Element Product
 <br>
  Given an array of integers, find the pair of adjacent elements that has the largest product and return that product.
 
