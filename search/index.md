@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: page
 title: "Search"
 date: 
@@ -10,22 +10,29 @@ search_omit: true
 sitemap: false
 ---
   
-<!-- Search form -->
-<form method="get" action="{{ site.url }}/search/" data-search-form class="simple-search">
-  <label for="q">Search {{ site.title }} for:</label>
-  <input type="search" name="q" id="q" placeholder="What are you looking for?" data-search-input id="goog-wm-qt" autofocus />
-  <input type="submit" value="Search" id="goog-wm-sb" />
-</form>
+if (searchTerm) {
+  document.getElementById('search-box').setAttribute('value', searchTerm);
 
-<!-- Search results placeholder -->
-<h6 data-search-found>
-  <span data-search-found-count></span> result(s) found for &ldquo;<span data-search-found-term></span>&rdquo;.
-</h6>
-<ul class="post-list" data-search-results></ul>
+  // Initalize lunr with the fields it will be searching on. I've given title
+  // a boost of 10 to indicate matches on this field are more important.
+  var idx = lunr(function () {
+    this.field('id');
+    this.field('title', { boost: 10 });
+    this.field('author');
+    this.field('category');
+    this.field('content');
 
-<!-- Search result template -->
-<script type="text/x-template" id="search-result">
-  <li><article>
-    <a href="##Url##">##Title## <span class="excerpt">##Excerpt##</span></a>
-  </article></li>
-</script>
+    for (var key in window.store) { // Add the data to lunr
+      this.add({
+        'id': key,
+        'title': window.store[key].title,
+        'author': window.store[key].author,
+        'category': window.store[key].category,
+        'content': window.store[key].content
+      });
+    }
+
+  });
+
+  var results = idx.search(searchTerm); // Get lunr to perform a search
+  displaySearchResults(results, window.store); // We'll write this in the next section
