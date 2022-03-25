@@ -33,6 +33,7 @@ alphabetSubsequence(s) = true.<br>
 function alphabetSubsequence(s) {
   const chars = s.split('');
   const charValues = []
+
   chars.forEach(char => {
     charValues.push(char.charCodeAt(0))
   });
@@ -58,13 +59,17 @@ console.log(alphabetSubsequence('bxz')) true
 
 
 
-We create function called alphabetSubsequence with parameter **s** and local variable **chars = s.split('')**  and **charValues = []**<br>
+We create function called alphabetSubsequence with parameter **s** and local variable **chars = s.split('')**  and **charValues = []**<br><br>
 The split() method divides a String into an ordered list of substrings, puts these substrings into an array, and returns the array. The division is done by searching for a pattern; where the pattern is provided as the first parameter in the method's call. - **MDN**
-
 <br><br>
-We loop through the **InputShifted**  with for loop and decalare variable **index = 0** other than that I check with if statement if **inputShifted[i] !== 'z'** then **index = alphabet.indexOf(inputShifted[i]) + 1**
+We do a forEach loop on **chars** array  and with callback function and parameter *char* we push **charValues.push(char.charCodeAt(0)**
 <br><br>
-Else we **inputShifted[i] = alphabet[index]**
+The charCodeAt() method returns an integer between 0 and 65535 representing the UTF-16 code unit at the given index. - **MDN**
 <br><br>
-\
-In the end we **inputShifted.join('')**
+If we use Set function to delete any duplicates **new Set(charValues).size !== charValues.length** if true we return false
+<br><br>
+We loop again with for loop this time to see the starting value (0) and until the last remainding value **charValues.lenght - 1** and we increment by 1
+<br><br>
+Inside the for loop we check if **charValues[i] >= charValues[i + 1]** and if it is we return false again. 
+<br><br>
+So if all the cases above are false we **return true**
