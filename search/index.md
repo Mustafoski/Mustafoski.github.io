@@ -24,7 +24,7 @@ sitemap: false
 <ul class="post-list" data-search-results></ul>
 
 <!-- Search result template -->
-<script src="{{ site.baseurl }}/js/search-script.js" type="text/javascript" id="search-result">
+<script type="text/x-template" id="search-result">
   <li><article>
     <a href="##Url##">##Title## <span class="excerpt">##Excerpt##</span></a>
   </article></li>
