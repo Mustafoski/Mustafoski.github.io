@@ -1,36 +1,32 @@
 ---
-layout: page
-title: "Search"
-date: 
-modified:
-excerpt:
-image:
-  feature:
-  search: true
-sitemap: false
+title: search
+layout: none
+search: exclude
 ---
-  
-<!-- Search form -->
-<form method="get" action="{{ site.url }}/search/" data-search-form class="simple-search">
-  <label for="q">Search {{ site.title }} for:</label>
-  <input type="search" name="q" id="q" placeholder="What are you looking for?" data-search-input id="goog-wm-qt" autofocus />
-  <input type="submit" value="Search" id="goog-wm-sb" />
-</form>
 
-<!-- Search results placeholder -->
-<h6 data-search-found>
-  <span data-search-found-count></span> result(s) found for &ldquo;<span data-search-found-term></span>&rdquo;.
-</h6>
-<ul class="post-list" data-search-results></ul>
+[
+{% for page in site.pages %}
+{% unless page.search == "exclude" %}
+{
+"title": "{{ page.title | escape }}",
+"tags": "{{ page.tags }}",
+"keywords": "{{page.keywords}}",
+"url": "{{ page.url | remove: "/"}}",
+"summary": "{{page.summary | strip }}"
+},
+{% endunless %}
+{% endfor %}
 
+{% for post in site.posts %}
 
+{
+"title": "{{ post.title | escape }}",
+"tags": "{{ post.tags }}",
+"keywords": "{{post.keywords}}",
+"url": "{{ post.url }}",
+"summary": "{{post.summary | strip }}"
+}
+{% unless forloop.last %},{% endunless %}
+{% endfor %}
 
-<!-- Search result template -->
-<script type="text/x-template" id="search-result">
-  <li><article>
-    <a href="##Url##">##Title## <span class="excerpt">##Excerpt##</span></a>
-  </article></li>
-</script>
-
-  <!-- jQuery - required but can be moved to the <head> -->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+]
