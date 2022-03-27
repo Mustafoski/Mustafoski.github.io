@@ -32,5 +32,3 @@ sitemap: false
   </article></li>
 </script>
 
-  <!-- jQuery - required but can be moved to the <head> -->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
