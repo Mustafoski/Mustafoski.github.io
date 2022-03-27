@@ -1,31 +1,37 @@
 ---
-layout: page
-title: "Search"
-date: 
-modified:
-excerpt:
-image:
-  feature:
-  search: true
-sitemap: false
+layout: default
+title: Search
+search_omit: true
 ---
+
+  <h1>Search</h1>
   
-<!-- Search form -->
-<form method="get" action="{{ site.url }}/search/" data-search-form class="simple-search">
-  <label for="q">Search {{ site.title }} for:</label>
-  <input type="search" name="q" id="q" placeholder="What are you looking for?" data-search-input id="goog-wm-qt" autofocus />
-  <input type="submit" value="Search" id="goog-wm-sb" />
-</form>
+  <!-- Search form -->
+  <form method="get" action="/search" data-search-form>
+    <label for="q">Search term</label>
+    <input type="search" name="q" id="q" placeholder="Enter search term" data-search-input />
+    <input type="submit" value="Search" />
+  </form>
 
-<!-- Search results placeholder -->
-<h6 data-search-found>
-  <span data-search-found-count></span> result(s) found for &ldquo;<span data-search-found-term></span>&rdquo;.
-</h6>
-<ul class="post-list" data-search-results></ul>
+  <!-- Search results placeholder -->
+  <p data-search-found>
+    <span data-search-found-count></span> result(s) found for &ldquo;<span data-search-found-term></span>&rdquo;.
+  </p>
+  <div data-search-results></div>
 
-<!-- Search result template -->
-<script type="text/x-template" id="search-result">
-  <li><article>
-    <a href="##Url##">##Title## <span class="excerpt">##Excerpt##</span></a>
-  </article></li>
-</script>
+
+
+  <!-- Search result template -->
+  <script type="text/x-template" id="search-result">
+    <div>
+      <h1><a href="##Url##">##Title##</a></h1>
+      <h2><a href="##Url##">##Date##</a></h2>
+      <a href="##Url##">Read &ldquo;##Title##&rdquo;</a>
+    </div>
+  </script>
+
+  <!-- jQuery - required but can be moved to the <head> -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+  <!-- Search script - Must appear after template -->
+  <script src="/scripts/search.js"></script>
