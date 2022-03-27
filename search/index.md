@@ -1,12 +1,12 @@
 ---
-layout: default
+layout: page
 title: "Search"
 date: 
 modified:
 excerpt:
 image:
   feature:
-  search_omit: true
+  search: true
 sitemap: false
 ---
   
