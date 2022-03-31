@@ -62,10 +62,14 @@ console.log(arrayConversion([1, 2, 3, 4, 5, 6, 7, 8])) => 186
 
 We create function called arrayConversion with parameter *inputArray* and local variable **isOdd = true** 
 <br><br>
-We loop the array given into the parameter *inputArray* with for loop then checks if *inputArray[i]* >= *inputArray[i + 1] 
+We loop the array given into the parameter *inputArray* with while loop then checks if *inputArray.length* is diferent than 1. If it is we give *inputArray* = **someProduct(inputArray, isOdd)** and toggle **isOdd = !isOdd** and in the end we **return inputArray[0]**
 <br><br>
-If true we create variable **difference** = (inputArray[i] + 1) - inputArray[i + 1] then we switch   <br>
-inputArray[i + 1] is inputArray[i] + 1 and we increase **count += difference**
+We create a helper function someProduct that takes an array parameter *nums* and boolean *isOdd* also we create a local variable **sumProducs = []** <br>
 <br><br>
-In the end we **return count**
+We check if isOdd and if it is we loop with for loop where we start at 0 goes input i is less than *nums.lenght* and we increase i by 2 in every iteration.<br>
+So as the description says if it is odd we use **sumProducs.push(nums[i] + nums[i + 1])**
 <br><br>
+Else if is even number we do the same we loop  with for loop where we start at 0 goes input i is less than *nums.lenght* and we increase i by 2 in every iteration.<br>
+So as in the description says if it is even we use **sumProducs.push(nums[i] * nums[i + 1])
+<br><br>
+In the end we **return sumProducs**
