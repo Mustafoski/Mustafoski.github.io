@@ -49,4 +49,4 @@ To sort the numbers array in ascending order, a compare function is passed as an
 <br><br>
 To sort the strings array in alphabetical order, no compare function is passed to the sort() method since strings are already comparable. The sort() method sorts the strings array in alphabetical order.<br><br>
 
-Finally, the console.log() method is used to display the sorted numbers and strings arrays in the console.
+Finally, the console.log() method is used to display the sorted numbers and strings arrays in the console.<br>
