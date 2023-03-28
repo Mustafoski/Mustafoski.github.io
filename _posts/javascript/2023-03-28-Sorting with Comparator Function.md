@@ -13,7 +13,7 @@ date: 2023-03-28T15:39:55-04:00
 modified: 2023-03-28T15:39:55-04:00
 ---
 
-Sorting with Comparator function
+Sorting with Comparator Function
 <br><br>
 
 Sorting with a comparator function means that a function is passed as an argument to the sort() method of an array to define the order in which the elements of the array should be sorted based on the comparison of two elements at a time, and the return value of the function determines their position in the sorted array.
@@ -22,8 +22,8 @@ Sorting with a comparator function means that a function is passed as an argumen
 let numbers = [57, 34, 10, 23, 7, 100]; and let strings = ['Banana', 'Orange', 'Apple', 'Blueberry'];
 <br><br>
 All possible sums of 2 consecutive elements are <br>
-*[7,10,23,34,57,100]<br>
-*['Apple', 'Banana', 'Blueberry', 'Orange']<br>
+[7,10,23,34,57,100]<br>
+['Apple', 'Banana', 'Blueberry', 'Orange']<br>
 
 
 
