@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Sorting with Comparator function"
+title: "Sorting with Comparator function v2"
 comments: true
 share: true
 modified:
@@ -9,11 +9,11 @@ excerpt:
 tags: []
 image:
   feature:
-date: 2023-02-09T15:39:55-04:00
-modified: 2023-02-09T15:39:55-04:00
+date: 2023-02-10T15:39:55-04:00
+modified: 2023-02-10T15:39:55-04:00
 ---
 
-Sorting with Comparator Function
+Sorting with Comparator function v2
 <br><br>
 
 Sorting with a comparator function means that a function is passed as an argument to the sort() method of an array to define the order in which the elements of the array should be sorted based on the comparison of two elements at a time, and the return value of the function determines their position in the sorted array.
