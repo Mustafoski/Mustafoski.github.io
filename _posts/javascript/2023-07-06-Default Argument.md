@@ -13,7 +13,7 @@ date: 2023-07-06T15:39:55-04:00
 modified: 2023-07-06T15:39:55-04:00
 ---
 
-Sorting with Comparator function -v2
+Default Argument 
 <br><br>
 
 Double function with a parameter *numberOfTimes* means that a function is passed as an argument to the number of times it will be invoked that parameter *numberOfTimes* 
