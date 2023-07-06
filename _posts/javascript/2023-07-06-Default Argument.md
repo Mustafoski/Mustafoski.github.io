@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Default Argument "
+title: "Default Argument"
 comments: true
 share: true
 modified:
@@ -9,8 +9,8 @@ excerpt:
 tags: []
 image:
   feature:
-date: 2023-07-06T15:39:55-04:00
-modified: 2023-07-06T15:39:55-04:00
+date: 2023-07-07T15:39:55-04:00
+modified: 2023-07-07T15:39:55-04:00
 ---
 
 Default Argument 
@@ -19,10 +19,12 @@ Default Argument
 Double function with a parameter *numberOfTimes* means that a function is passed as an argument to the number of times it will be invoked that parameter *numberOfTimes* 
 
 **Example**<br>
-
-
-
-
+console.log(double(10)) => we don't have to give another parameter because it is 1 per default.
+<br>
+Solution: 20
+<br>
+console.log(double(10,2)) => 40
+<br>
 
 ~~~
 let double = (x, numberOfTimes = 1) => {
