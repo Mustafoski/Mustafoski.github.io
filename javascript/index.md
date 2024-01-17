@@ -2,7 +2,8 @@
 layout: page
 title: JavaScript
 excerpt: "An archive of JavaScript blog posts sorted by date."
-search_omit: true
+type:"posts"
+search_omit: false
 ---
 
 <ul class="post-list">
