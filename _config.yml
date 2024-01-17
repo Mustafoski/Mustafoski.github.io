@@ -11,6 +11,13 @@ url: https://mustafoski.github.io
 
 # Jekyll configuration
 
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      search_omit: false
+
 permalink:   /:categories/:title/
 markdown:    kramdown
 highlighter: rouge
