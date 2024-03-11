@@ -26,7 +26,7 @@ Solution: [ 1, 2, 3, 4, 5, 8 ]
 <br>
 
 
-```javascript
+```
 function bubbleSort(array) {
   for (let i = array.length; i > 0; i--) {
     for (let j = 0; j < i; j++) {
@@ -42,7 +42,7 @@ function bubbleSort(array) {
 
 console.log(bubbleSort([5, 3, 8, 2, 1, 4]));
 [ 1, 2, 3, 4, 5, 8 ]
-
+```
 Outer Loop: The outer loop iterates over the array in reverse order, starting from the last element (array.length) and decrementing i until it reaches 0. This loop controls the number of passes through the array.
 
 Inner Loop: Within the outer loop, there's an inner loop that iterates over the array from index 0 to i - 1. This loop compares adjacent elements and swaps them if they are in the wrong order (i.e., if array[j] is greater than array[j + 1]).
