@@ -3,6 +3,7 @@ layout: page
 title: JavaScript
 excerpt: "An archive of JavaScript blog posts sorted by date."
 type:"posts"
+path:""
 search_omit: false
 ---
 
