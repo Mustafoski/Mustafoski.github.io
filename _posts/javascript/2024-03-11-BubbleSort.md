@@ -18,12 +18,13 @@ Bubble Sort
 
 Given an array, find the maximal sum difference between any two of its adjacent elements.
 **Example**<br>
-For Input: inputArray = [2, 4, 1, 0] the output should be arrayMaximalAdjacentDifference(inputArray) = 3
+For Input: inputArray = [5, 3, 8, 2, 1, 4] the output should be bubbleSort will be [ 1, 2, 3, 4, 5, 8 ]
+
 <br>
-Solution: 20
+Solution: [ 1, 2, 3, 4, 5, 8 ]
+
 <br>
-console.log(double(10,2)) => 40
-<br>
+
 
 ```javascript
 function bubbleSort(array) {
