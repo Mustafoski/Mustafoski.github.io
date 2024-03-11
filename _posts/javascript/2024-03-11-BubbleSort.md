@@ -43,19 +43,14 @@ function bubbleSort(array) {
 console.log(bubbleSort([5, 3, 8, 2, 1, 4]));
 [ 1, 2, 3, 4, 5, 8 ]
 
-The outer loop iterates over the array in reverse order, starting from the last element (array.length) and decrementing i until it reaches 0. This loop controls the number of passes through the array.
+Outer Loop: The outer loop iterates over the array in reverse order, starting from the last element (array.length) and decrementing i until it reaches 0. This loop controls the number of passes through the array.
 
-Within the outer loop, there's an inner loop that iterates over the array from index 0 to i - 1. This loop compares adjacent elements and swaps them if they are in the wrong order (i.e., if array[j] is greater than array[j + 1]).
+Inner Loop: Within the outer loop, there's an inner loop that iterates over the array from index 0 to i - 1. This loop compares adjacent elements and swaps them if they are in the wrong order (i.e., if array[j] is greater than array[j + 1]).
 
-The swapping is done using a temporary variable temp to hold the value of array[j] before it's overwritten by array[j + 1]. This ensures that the original value of array[j] is preserved during the swap.
+Swapping: The swapping is done using a temporary variable temp to hold the value of array[j] before it's overwritten by array[j + 1]. This ensures that the original value of array[j] is preserved during the swap.
 
-After completing each pass through the array, the largest unsorted element "bubbles up" to its correct position at the end of the array.
+Bubble Up: After completing each pass through the array, the largest unsorted element "bubbles up" to its correct position at the end of the array.
 
-The function returns the sorted array after completing all passes.
-
-This summary outlines the basic functionality of the Bubble Sort algorithm implemented in the bubbleSort function.
-
-
-
+Return: The function returns the sorted array after completing all passes.
 
 
