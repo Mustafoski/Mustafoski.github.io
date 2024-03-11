@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Array Maximal Adjacent Difference"
+title: "Buble Sort"
 comments: true
 share: true
 modified:
