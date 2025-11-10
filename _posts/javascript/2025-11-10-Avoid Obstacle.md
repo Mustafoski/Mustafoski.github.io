@@ -36,7 +36,7 @@ function avoidObsticle(inputArray) {
 
   for(let i = 1; i <= largestArrayVal + 1; i++){
     if (inputArray.every((element) => {
-      element % i ! === 0
+      element % i !== 0
       return i;
       }))
   }
@@ -50,7 +50,7 @@ function avoidObsticle(inputArray) {
 ## Description
 The `avoidObsticle` function is designed to determine the smallest integer that can "avoid" all obstacles in a given array. The obstacles are represented as numbers in `inputArray`, and the goal is to find a step size that does not evenly divide any of the array elements.
 
-> **Note:** There are a few syntax issues in the current code, such as `lenght` instead of `length` and `! ===` instead of `!==`. These need to be corrected for the function to work properly.
+.
 
 ## Parameters
 - `inputArray` (`Array<number>`): An array of integers representing the positions of obstacles.
