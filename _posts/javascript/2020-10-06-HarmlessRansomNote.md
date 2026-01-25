@@ -1,0 +1,85 @@
+---
+layout: post
+title: "Harmless Ransom Note"
+comments: true
+share: true
+modified:
+categories: javascript
+excerpt:
+tags: []
+image:
+  feature:
+date: 2020-10-06T15:39:55-04:00
+modified: 2020-10-06T15:39:55-04:00
+---
+
+## Harmless Ransom Note
+
+Harmless Ransom Note is an important algorithm because it is critical to writing fast and performance programs such as how to use an object as a hash table. It is algorithm simply a note that is made from words 
+
+___
+
+> ##For Example
+Note <br>
+this is a secret note for you from a secret admirer'<br>
+Example <br>
+'puerto rico is a place of great wonder and excitement it has many secret waterfall locations that i am an admirer of you must hike quite a distance to find the secret places as they are far from populated areas but it is worth the effort a tip i have for you is to go early in the morning when it is not so hot out also note that you must wear hiking boots this is one of the best places i have ever visited'
+<br>
+returns: true
+##
+<br>
+
+___
+
+
+~~~
+
+
+~~~
+function harmlessRansomNote(noteText, exampleText) {
+  var noteArray = noteText.split(' ');
+  var magazineArr = exampleText.split(' ');
+  var exampleObj = {};
+  
+  magazineArr.forEach(word => {
+    if (!exampleObj[word]) exampleObj[word] = 0;
+    exampleObj[word]++;
+  });
+  
+  var noteIsPossible = true;
+  noteArray.forEach(word => {
+    if (exampleObj[word]) {
+      exampleObj[word]--;
+      if (exampleObj[word] < 0) noteIsPossible = false;
+    }
+    else noteIsPossible = false; 
+  });
+  
+  return noteIsPossible;
+}
+harmlessRansomNote('this is a secret note for you from a secret admirer', 'puerto rico is a place of great wonder and excitement it has many secret waterfall locations that i am an admirer of you must hike quite a distance to find the secret places as they are far from populated areas but it is worth the effort a tip i have for you is to go early in the morning when it is not so hot out also note that you must wear hiking boots this is one of the best places i have ever visited');
+___
+
+We will start by writing a function called harmlessRansomNote and pass two parameters the noteText and exampleText ( often called magazine text) for the purpose of this algorithm we will assume that all the letters are lowercase! We will do this so we can focus on the algorithm. <br>
+First we will make the parameters noteText and exampleText into an array so we will use the split method like this let noteArray = noteText.split(' ') with space! so it will be splited into words not letters and we will do the same for exampleText. <br>
+Now we will create an object exampleObj that will hold the words from the splited exampleArray and it will be a hash table looking like key of the object is the word and value how many times.
+We will do this with forEach loop like this <br>
+exampleArray.forEach(word => {
+	if(!exampleObj[word])  -> if the word is not present in the object so we say exampleObj[word] = 0
+						   -> exampleObj[word] ++; so we increment if the word is found.
+})<br>
+Now as we have our hash table we continue with our algorithm and we check of in our example we have our noteArray words. So we loop with forEach loop again and we check if each word is present in our exampleArray if our word is present in the exampleArray we decrement by one which means we found one note word in our exampleArray.We also create a boolean checker to check if we can continue with looping or not that variable is called noteIsPossible and it starts with true That will look like<br>
+
+let noteIsPossible = true;
+noteArray.forEach(word => {
+	if(exampleObj[word]){
+	exampleObj[word]--;
+	if(exampleObj[word] < 0) noteIsPossible = false;
+}else {
+	noteIsPossible = false;
+}
+return noteIsPossible;
+})
+
+We check also if there are not enough words if they are many of the same in the noteArray if there is less than 0 we return false in the noteIsPossible.
+At the end we return true or false;
