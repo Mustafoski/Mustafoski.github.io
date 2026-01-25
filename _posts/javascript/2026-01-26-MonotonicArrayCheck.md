@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Monotonic Array Check"
+title: "Monotonic Array Check "
 comments: true
 share: true
 modified:
