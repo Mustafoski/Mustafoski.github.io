@@ -9,9 +9,8 @@ excerpt:
 tags: []
 image:
   feature:
-date: 2024-11-11 10:00:00 +0100
-
-modified: 2024-11-11T15:39:55-04:00
+date: 2026-01-26T15:39:55-04:00
+modified: 2024-01-26T15:39:55-04:00
 ---
 
 # Monotonic Array Check
