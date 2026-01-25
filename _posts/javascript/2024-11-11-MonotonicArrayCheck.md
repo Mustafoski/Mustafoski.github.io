@@ -18,7 +18,7 @@ modified: 2024-11-11T15:39:55-04:00
 ## Definition
 An array is **monotonic** if it is either:
 - **Non-decreasing** (each element is greater than or equal to the previous one), or
-- **Non-increasing** (each element is less than or equal to the previous one).
+- **Non-increasing** (each element is less than or equal to the previous one)..
 
 Single-element arrays are always monotonic.
 
