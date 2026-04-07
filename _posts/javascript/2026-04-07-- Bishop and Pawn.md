@@ -1,0 +1,162 @@
+---
+layout: post
+title: "Bishop and Pawn "
+comments: true
+share: true
+modified:
+categories: javascript
+excerpt:
+tags: []
+image:
+  feature:
+date: 2026-04-07T15:39:55-04:00
+modified: 2026-04-07T15:39:55-04:00
+---
+
+# Monotonic Array Check
+
+## Definition
+--- **The "Bishop and Pawn" algorithm is a classic programming exercise (popular on platforms like CodeSignal or GeeksforGeeks) designed to test your understanding of coordinate geometry on a 2D grid.It boils down to one simple question: "Can a Bishop at $(x_1, y_1)$ capture a Pawn at $(x_2, y_2)$ in exactly one move?"**
+
+
+Single-element arrays are always monotonic.
+
+---
+
+
+~~~
+# 📌 bishopAndPawn Function – Summary
+
+## 🧠 Purpose
+
+The `bishopAndPawn` function checks whether a **bishop** can capture a **pawn** on a chessboard in one move.
+
+---
+
+## ♟️ How It Works
+
+### 1. Board Mapping
+
+```js
+const board = {
+  "a":1, "b":2, "c":3, "d":4,
+  "e":5, "f":6, "g":7, "h":8
+};
+```
+
+* Converts chess columns (`a–h`) into numeric values (`1–8`).
+
+---
+
+### 2. Extract Coordinates
+
+#### Bishop
+
+```js
+const bishopX = board[bishop[0]];
+const bishopY = parseInt(bishop[1]);
+```
+
+#### Pawn
+
+```js
+const pawnX = board[pawn[0]];
+const pawnY = parseInt[pawn[1]];
+```
+
+* Splits positions like `"c1"` into:
+
+  * X (column)
+  * Y (row)
+
+---
+
+### 3. Capture Logic
+
+```js
+if (
+  bishopX + bishopY === pawnX + pawnY ||
+  bishopX + pawnY === pawnX + bishopY
+)
+```
+
+* A bishop moves diagonally.
+* Two squares are on the same diagonal if:
+
+  * Their **sum is equal**, OR
+  * Their **difference is equal** (represented here using rearranged sums)
+
+---
+
+### 4. Return Result
+
+```js
+return true;  // if capture possible
+return false; // otherwise
+```
+
+---
+
+## ❗ Bugs in the Code
+
+### 1. Incorrect `parseInt` usage
+
+```js
+parseInt[pawn[1]] ❌
+parseInt(pawn[1]) ✅
+```
+
+### 2. Typo in variable name
+
+```js
+pawnnX ❌
+pawnX  ✅
+```
+
+---
+
+## ✅ Fixed Version
+
+```js
+const bishopAndPawn = function (bishop, pawn) {
+  const board = {
+    a:1,b:2,c:3,d:4,e:5,f:6,g:7,h:8
+  };
+
+  const bishopX = board[bishop[0]];
+  const bishopY = parseInt(bishop[1]);
+
+  const pawnX = board[pawn[0]];
+  const pawnY = parseInt(pawn[1]);
+
+  if (
+    bishopX + bishopY === pawnX + pawnY ||
+    bishopX - bishopY === pawnX - pawnY
+  ) {
+    return true;
+  }
+
+  return false;
+};
+```
+
+---
+
+
+
+~~~
+
+
+
+
+
+## How It Works
+
+1. ## 🏁 Summary
+
+* Converts chess notation → coordinates
+* Checks diagonal alignment
+* Returns whether bishop can capture pawn
+
+---
+
