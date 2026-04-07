@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Bishop and Pawn "
+title: "Bishop and Pawn"
 comments: true
 share: true
 modified:
@@ -13,28 +13,16 @@ date: 2026-04-07T15:39:55-04:00
 modified: 2026-04-07T15:39:55-04:00
 ---
 
-# Monotonic Array Check
+
+
+# Bishop and Pawn
 
 ## Definition
 --- **The "Bishop and Pawn" algorithm is a classic programming exercise (popular on platforms like CodeSignal or GeeksforGeeks) designed to test your understanding of coordinate geometry on a 2D grid.It boils down to one simple question: "Can a Bishop at $(x_1, y_1)$ capture a Pawn at $(x_2, y_2)$ in exactly one move?"**
 
 
-Single-element arrays are always monotonic.
 
 ---
-
-
-
-# 📌 bishopAndPawn Function – Summary
-
-## 🧠 Purpose
-
-The `bishopAndPawn` function checks whether a **bishop** can capture a **pawn** on a chessboard in one move.
-
-false; // otherwise
-
-
-
 
 ~~~
 const bishopAndPawn = function (bishop, pawn) {
@@ -131,5 +119,4 @@ if (
 return true;  // if capture possible
 return 
 
-
-
+---
