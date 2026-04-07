@@ -18,7 +18,7 @@ modified: 2026-04-07T15:39:55-04:00
 # Bishop and Pawn
 
 ## Definition
---- **The "Bishop and Pawn" algorithm is a classic programming exercise (popular on platforms like CodeSignal or GeeksforGeeks) designed to test your understanding of coordinate geometry on a 2D grid.It boils down to one simple question: "Can a Bishop at $(x_1, y_1)$ capture a Pawn at $(x_2, y_2)$ in exactly one move?"**
+**The "Bishop and Pawn" algorithm is a classic programming exercise (popular on platforms like CodeSignal or GeeksforGeeks) designed to test your understanding of coordinate geometry on a 2D grid.It boils down to one simple question: "Can a Bishop at $(x_1, y_1)$ capture a Pawn at $(x_2, y_2)$ in exactly one move?"**
 
 
 
@@ -55,7 +55,7 @@ const bishopAndPawn = function (bishop, pawn) {
 
 ### How It Works
 
-1. ## 🏁 Summary
+1. ##  Summary
 
 
 ## ♟️ How It Works
@@ -69,7 +69,7 @@ const board = {
 };
 
 
-* Converts chess columns (`a–h`) into numeric values (`1–8`).
+* Converts chess columns (a–h) into numeric values (1–8).
 
 
 
@@ -89,7 +89,7 @@ const pawnX = board[pawn[0]];
 const pawnY = parseInt[pawn[1]];
 
 
-* Splits positions like `"c1"` into:
+* Splits positions like "c1" into:
 
   * X (column)
   * Y (row)
