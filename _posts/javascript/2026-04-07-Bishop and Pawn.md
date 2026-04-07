@@ -24,7 +24,7 @@ modified: 2026-04-07T15:39:55-04:00
 
 ---
 
-~~~
+```
 const bishopAndPawn = function (bishop, pawn) {
   const board = {
     a:1,b:2,c:3,d:4,e:5,f:6,g:7,h:8
@@ -47,7 +47,7 @@ const bishopAndPawn = function (bishop, pawn) {
 };
 
 
-~~~
+```
 
 
 
