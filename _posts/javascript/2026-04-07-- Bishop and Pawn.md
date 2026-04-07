@@ -95,27 +95,6 @@ return true;  // if capture possible
 return false; // otherwise
 ```
 
----
-
-## ❗ Bugs in the Code
-
-### 1. Incorrect `parseInt` usage
-
-```js
-parseInt[pawn[1]] ❌
-parseInt(pawn[1]) ✅
-```
-
-### 2. Typo in variable name
-
-```js
-pawnnX ❌
-pawnX  ✅
-```
-
----
-
-## ✅ Fixed Version
 
 ```js
 const bishopAndPawn = function (bishop, pawn) {
