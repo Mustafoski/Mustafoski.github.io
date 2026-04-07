@@ -24,79 +24,19 @@ Single-element arrays are always monotonic.
 ---
 
 
-~~~
+
 # 📌 bishopAndPawn Function – Summary
 
 ## 🧠 Purpose
 
 The `bishopAndPawn` function checks whether a **bishop** can capture a **pawn** on a chessboard in one move.
 
----
-
-## ♟️ How It Works
-
-### 1. Board Mapping
-
-```js
-const board = {
-  "a":1, "b":2, "c":3, "d":4,
-  "e":5, "f":6, "g":7, "h":8
-};
-```
-
-* Converts chess columns (`a–h`) into numeric values (`1–8`).
-
----
-
-### 2. Extract Coordinates
-
-#### Bishop
-
-```js
-const bishopX = board[bishop[0]];
-const bishopY = parseInt(bishop[1]);
-```
-
-#### Pawn
-
-```js
-const pawnX = board[pawn[0]];
-const pawnY = parseInt[pawn[1]];
-```
-
-* Splits positions like `"c1"` into:
-
-  * X (column)
-  * Y (row)
-
----
-
-### 3. Capture Logic
-
-```js
-if (
-  bishopX + bishopY === pawnX + pawnY ||
-  bishopX + pawnY === pawnX + bishopY
-)
-```
-
-* A bishop moves diagonally.
-* Two squares are on the same diagonal if:
-
-  * Their **sum is equal**, OR
-  * Their **difference is equal** (represented here using rearranged sums)
-
----
-
-### 4. Return Result
-
-```js
-return true;  // if capture possible
-return false; // otherwise
-```
+false; // otherwise
 
 
-```js
+
+
+~~~
 const bishopAndPawn = function (bishop, pawn) {
   const board = {
     a:1,b:2,c:3,d:4,e:5,f:6,g:7,h:8
@@ -117,10 +57,6 @@ const bishopAndPawn = function (bishop, pawn) {
 
   return false;
 };
-```
-
----
-
 
 
 ~~~
@@ -129,13 +65,71 @@ const bishopAndPawn = function (bishop, pawn) {
 
 
 
-## How It Works
+### How It Works
 
 1. ## 🏁 Summary
 
-* Converts chess notation → coordinates
-* Checks diagonal alignment
-* Returns whether bishop can capture pawn
 
----
+## ♟️ How It Works
+
+### 1. Board Mapping
+
+
+const board = {
+  "a":1, "b":2, "c":3, "d":4,
+  "e":5, "f":6, "g":7, "h":8
+};
+
+
+* Converts chess columns (`a–h`) into numeric values (`1–8`).
+
+
+
+### 2. Extract Coordinates
+
+#### Bishop
+
+
+const bishopX = board[bishop[0]];
+const bishopY = parseInt(bishop[1]);
+
+
+#### Pawn
+
+
+const pawnX = board[pawn[0]];
+const pawnY = parseInt[pawn[1]];
+
+
+* Splits positions like `"c1"` into:
+
+  * X (column)
+  * Y (row)
+
+
+
+### 3. Capture Logic
+
+####
+if (
+  bishopX + bishopY === pawnX + pawnY ||
+  bishopX + pawnY === pawnX + bishopY
+)
+
+
+* A bishop moves diagonally.
+* Two squares are on the same diagonal if:
+
+  * Their **sum is equal**, OR
+  * Their **difference is equal** (represented here using rearranged sums)
+
+
+
+### 4. Return Result
+
+
+return true;  // if capture possible
+return 
+
+
 
