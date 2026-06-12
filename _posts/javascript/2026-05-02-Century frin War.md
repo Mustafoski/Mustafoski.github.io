@@ -41,17 +41,20 @@ console.log(centuryFromYear(1700)) 17
 
 
 
----
-# Implementation Details
 
-## Parameter
-year: The year for which the century needs to be determined.
+⚙️ Implementation Details
+Parameters
+year (Number): The year for which the century needs to be determined (e.g., 1905, 1700).
 
-## Logic
-      * Divide the year by 100 to calculate its century value.
-      * Check whether the year is evenly divisible by 100.
-      * If the remainder is 0, the year falls at the end of a century, so return the calculated century.
-      * Otherwise, round the result down using Math.floor() and add 1 to get the correct century.
-      * Return the resulting century number.
+Step-by-Step Logic
+Divide the year by 100 to calculate its base century value.
+
+Evaluate whether the year is evenly divisible by 100 using the modulo operator (year % 100 === 0).
+
+Exact Centuries: If the remainder is 0, the year falls exactly at the end of a century (like 1700 or 2000). In this case, simply return the calculated century value.
+
+Partial Centuries: If there is a remainder, it means the year is partway through the next century. Round the base calculation down using Math.floor() and add 1 to get the correct, current century.
+
+Return the final calculated century number.
 
 ---
