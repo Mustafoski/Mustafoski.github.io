@@ -48,10 +48,10 @@ console.log(centuryFromYear(1700)) 17
 year: The year for which the century needs to be determined.
 
 ## Logic
-       Divide the year by 100 to calculate its century value.
-       Check whether the year is evenly divisible by 100.
-       If the remainder is 0, the year falls at the end of a century, so return the calculated century.
-       Otherwise, round the result down using Math.floor() and add 1 to get the correct century.
-       Return the resulting century number.
+      * Divide the year by 100 to calculate its century value.
+      * Check whether the year is evenly divisible by 100.
+      * If the remainder is 0, the year falls at the end of a century, so return the calculated century.
+      * Otherwise, round the result down using Math.floor() and add 1 to get the correct century.
+      * Return the resulting century number.
 
 ---
