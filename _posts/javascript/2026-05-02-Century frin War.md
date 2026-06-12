@@ -41,7 +41,7 @@ console.log(centuryFromYear(1700)) 17
 
 
 
-
+---
 # Implementation Details
 
 ## Parameter
